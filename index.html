@@ -594,6 +594,28 @@ html.seen #intro{display:none}
 .band{padding:0 0 clamp(70px,9vw,120px)}
 .band-in{border:1px solid var(--line);background:var(--graphite);padding:clamp(26px,4vw,48px);display:flex;gap:clamp(24px,4vw,56px);align-items:center;justify-content:space-between}
 .band-in > div{max-width:660px}
+/* ---------- oferty pobierane z programu biura ---------- */
+.oferty-liczby{font-family:var(--display);font-size:clamp(1.15rem,.8vw + 1rem,1.45rem);color:var(--gold-l);margin:0 0 12px}
+.oferty-siatka{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:clamp(16px,2vw,26px);margin-top:clamp(22px,3vw,36px)}
+.oferta-k{display:flex;flex-direction:column;text-align:left;border:1px solid var(--line);background:var(--graphite);color:var(--bone);padding:0;cursor:pointer;font:inherit;transition:border-color .25s var(--ease),transform .25s var(--ease)}
+.oferta-k:hover,.oferta-k:focus-visible{border-color:var(--gold);transform:translateY(-2px)}
+.oferta-k .fot{aspect-ratio:4/3;background:linear-gradient(135deg,#1b1b20,#0B0B0D);position:relative}
+.oferta-k .fot img{width:100%;height:100%;object-fit:cover;display:block}
+.oferta-k .znak{position:absolute;left:12px;top:12px;background:rgba(11,11,13,.82);color:var(--gold-l);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 10px}
+.oferta-k .tr{padding:18px 20px 20px;display:flex;flex-direction:column;gap:6px}
+.oferta-k .cena{font-family:var(--display);font-size:1.5rem;color:var(--gold-l)}
+.oferta-k .tyt{font-weight:600;line-height:1.35}
+.oferta-k .par{color:var(--ash);font-size:.9rem}
+.dlg-oferta{width:min(980px,calc(100% - 32px))}
+.dlg-oferta .gal{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -26px 18px;padding:0 26px}
+.dlg-oferta .gal img{height:min(52vh,420px);width:auto;max-width:88vw;object-fit:cover;scroll-snap-align:start;flex:none}
+.dlg-oferta .ai{font-size:.82rem;color:var(--ash);margin:-8px 0 14px}
+.dlg-oferta dl{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px 18px;margin:6px 0 20px}
+.dlg-oferta dt{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.dlg-oferta dd{margin:2px 0 0}
+.dlg-oferta .cena-d{font-family:var(--display);font-size:1.6rem;color:var(--gold-l);margin:0 0 6px}
+.dlg-oferta .opis{white-space:pre-line}
+.dlg-oferta .cta-row{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
 .band .eyebrow{display:block;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
 .band h2{font-size:clamp(1.5rem,1.4vw + 1.1rem,2.1rem);max-width:none;margin-bottom:14px}
 .band p{margin:0}
@@ -936,10 +958,12 @@ html.seen #intro{display:none}
       <div>
         <span class="eyebrow">Nieruchomości</span>
         <h2 id="h-oferty">Pierwsze nieruchomości są w&nbsp;trakcie weryfikacji.</h2>
-        <p class="muted">Oferta poja&shy;wia się tutaj dopiero po pod&shy;pi&shy;sa&shy;niu umowy z&nbsp;wła&shy;ści&shy;cie&shy;lem i&nbsp;zakoń&shy;cze&shy;niu wery&shy;fi&shy;ka&shy;cji. Szu&shy;ka&shy;cie nie&shy;ru&shy;cho&shy;mo&shy;ści? Zostaw&shy;cie kry&shy;te&shy;ria, a&nbsp;ode&shy;zwiemy się, gdy pojawi się pasująca.</p>
+        <p class="oferty-liczby" id="oferty-liczby" hidden></p>
+        <p class="muted" id="oferty-opis">Oferta poja&shy;wia się tutaj dopiero po pod&shy;pi&shy;sa&shy;niu umowy z&nbsp;wła&shy;ści&shy;cie&shy;lem i&nbsp;zakoń&shy;cze&shy;niu wery&shy;fi&shy;ka&shy;cji. Szu&shy;ka&shy;cie nie&shy;ru&shy;cho&shy;mo&shy;ści? Zostaw&shy;cie kry&shy;te&shy;ria, a&nbsp;ode&shy;zwiemy się, gdy pojawi się pasująca.</p>
       </div>
       <a class="btn" href="#kontakt" data-tab="buy">Zostaw kryteria poszukiwań</a>
     </div>
+    <div class="oferty-siatka" id="oferty-lista" hidden></div>
   </div>
 </section>
 
@@ -1098,6 +1122,11 @@ html.seen #intro{display:none}
 </footer>
 
 <!-- ================= DIALOGI ================= -->
+<dialog id="dlg-oferta" class="dlg-oferta" aria-labelledby="do-t">
+  <div class="dh"><h2 id="do-t">Oferta</h2><button class="x" type="button" data-close aria-label="Zamknij">×</button></div>
+  <div class="db" id="do-tresc"></div>
+</dialog>
+
 <dialog id="dlg-rodo" aria-labelledby="dr-t">
   <div class="dh"><h2 id="dr-t">Informacja o&nbsp;przetwarzaniu danych osobowych</h2><button class="x" type="button" data-close aria-label="Zamknij">×</button></div>
   <div class="db">
@@ -1165,7 +1194,12 @@ html.seen #intro{display:none}
 <script>
 (function(){
 "use strict";
-var CONFIG = { email: "kontakt@example.com" }; // TODO: docelowy adres e-mail biura
+var CONFIG = {
+  email: "kontakt@example.com", // TODO: docelowy adres e-mail biura
+  // Lista ofert z programu Moja Agencja. Gdy program jej nie wystawia (serwer testowy),
+  // zostaje napis „Pierwsze nieruchomości są w trakcie weryfikacji”.
+  oferty: "https://188-68-247-201.sslip.io/agencja/publiczne/oferty.json"
+};
 var RM = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 var doc = document.documentElement, body = document.body;
 document.getElementById("yr").textContent = new Date().getFullYear();
@@ -1450,6 +1484,66 @@ document.addEventListener("click", function(e){
     m();
     mc.querySelectorAll("a").forEach(function(a){ a.addEventListener("click", function(){ mc.classList.remove("show"); }); });
   }
+})();
+
+/* ---------- oferty z programu biura (Moja Agencja) ---------- */
+(function(){
+  var lista=document.getElementById("oferty-lista"); if(!lista || !CONFIG.oferty || !window.fetch) return;
+  var zl=new Intl.NumberFormat("pl-PL",{maximumFractionDigits:0});
+  function el(tag, cls, tekst){ var e=document.createElement(tag); if(cls) e.className=cls; if(tekst!=null) e.textContent=tekst; return e; }
+  function odm(n, a, b, c){ var d=n%10, s=n%100; return n===1?a:(d>=2&&d<=4&&(s<12||s>14))?b:c; }
+  function kwota(o){ return o.tryb==="najem" ? (o.czynsz? zl.format(o.czynsz)+" zł / mies.":"") : (o.cena? zl.format(o.cena)+" zł":""); }
+  function parametry(o){
+    var p=[]; if(o.powierzchnia) p.push(String(o.powierzchnia).replace(".",",")+" m²");
+    if(o.pokoje) p.push(o.pokoje+" "+odm(o.pokoje,"pokój","pokoje","pokoi"));
+    if(o.pietro!=null) p.push(o.pietro===0?"parter":"piętro "+o.pietro+(o.liczba_pieter?" z "+o.liczba_pieter:""));
+    return p.join(" · ");
+  }
+  function miejsce(o){ return [o.ulica, o.miejscowosc].filter(Boolean).join(", "); }
+  function pokaz(o){
+    var d=document.getElementById("dlg-oferta"), t=document.getElementById("do-tresc");
+    document.getElementById("do-t").textContent=o.tytul||o.typ_nazwa;
+    t.textContent="";
+    if(o.zdjecia.length){
+      var g=el("div","gal"); o.zdjecia.forEach(function(z,i){ var im=el("img"); im.src=z.url; im.alt=(o.tytul||o.typ_nazwa)+", zdjęcie "+(i+1); im.loading="lazy"; im.onerror=function(){ im.remove(); }; g.appendChild(im); }); t.appendChild(g);
+      if(o.zdjecia.some(function(z){return z.ai;})) t.appendChild(el("p","ai","Część zdjęć zmodyfikowano z użyciem AI — opis zmian w treści ogłoszenia."));
+    }
+    t.appendChild(el("p","cena-d",kwota(o)+(o.cena_m2?" · "+zl.format(o.cena_m2)+" zł/m²":"")));
+    var dl=el("dl"); [["Rodzaj",o.typ_nazwa+" · "+o.tryb_nazwa.toLowerCase()],["Okolica",miejsce(o)],["Powierzchnia",o.powierzchnia?String(o.powierzchnia).replace(".",",")+" m²":""],["Pokoje",o.pokoje],["Piętro",o.pietro!=null?(o.pietro===0?"parter":o.pietro+(o.liczba_pieter?" z "+o.liczba_pieter:"")):""],["Rok budowy",o.rok_budowy],["Działka",o.powierzchnia_dzialki?zl.format(o.powierzchnia_dzialki)+" m²":""],["Rynek",o.rynek],["Numer oferty",o.numer]].forEach(function(p){ if(p[1]===null||p[1]===undefined||p[1]==="") return; var w=el("div"); w.appendChild(el("dt",null,p[0])); w.appendChild(el("dd",null,String(p[1]))); dl.appendChild(w); });
+    t.appendChild(dl);
+    if(o.opis) t.appendChild(el("p","opis",o.opis));
+    if(o.okolica){ var m=el("a",null,"Okolica na mapie"); m.href="https://www.openstreetmap.org/?mlat="+o.okolica.lat+"&mlon="+o.okolica.lon+"#map=15/"+o.okolica.lat+"/"+o.okolica.lon; m.target="_blank"; m.rel="noopener"; var pm=el("p","muted"); pm.appendChild(m); pm.appendChild(document.createTextNode(" — przybliżona, dokładny adres podamy przy umawianiu oglądania.")); t.appendChild(pm); }
+    var cta=el("div","cta-row"), b=el("a","btn","Zapytaj o tę ofertę"); b.href="#kontakt";
+    b.addEventListener("click", function(){
+      d.close(); selTab("buy");
+      var f=document.getElementById("f-buy"); if(f){ if(f.elements.kryteria) f.elements.kryteria.value="Pytam o ofertę "+o.numer+": "+(o.tytul||o.typ_nazwa)+"."; if(f.elements.lokalizacja && !f.elements.lokalizacja.value) f.elements.lokalizacja.value=miejsce(o); }
+    });
+    cta.appendChild(b); t.appendChild(cta);
+    if(d.showModal) d.showModal();
+  }
+  function karta(o){
+    var k=el("button","oferta-k"); k.type="button";
+    var f=el("div","fot"); if(o.zdjecia.length){ var im=el("img"); im.src=o.zdjecia[0].url; im.alt=""; im.loading="lazy"; im.onerror=function(){ im.remove(); }; f.appendChild(im); }
+    f.appendChild(el("span","znak",o.typ_nazwa+" · "+o.tryb_nazwa.toLowerCase())); k.appendChild(f);
+    var tr=el("div","tr"); tr.appendChild(el("span","cena",kwota(o))); tr.appendChild(el("span","tyt",o.tytul||o.typ_nazwa));
+    tr.appendChild(el("span","par",[parametry(o), miejsce(o)].filter(Boolean).join(" · "))); k.appendChild(tr);
+    k.addEventListener("click", function(){ pokaz(o); });
+    return k;
+  }
+  fetch(CONFIG.oferty,{mode:"cors",credentials:"omit"}).then(function(r){ return r.ok?r.json():null; }).then(function(dane){
+    if(!dane || !dane.wlaczona) return;
+    var liczby=(dane.statystyki&&dane.statystyki.transakcje_w_roku||[]).filter(function(x){return x.liczba>0;});
+    if(liczby.length){
+      var p=document.getElementById("oferty-liczby");
+      p.textContent=liczby.slice(-3).reverse().map(function(x){ return x.liczba+" "+odm(x.liczba,"transakcja doprowadzona","transakcje doprowadzone","transakcji doprowadzonych")+" do końca w "+x.rok; }).join(" · ");
+      p.hidden=false;
+    }
+    if(!dane.oferty || !dane.oferty.length) return;
+    document.getElementById("h-oferty").textContent="Aktualne oferty";
+    document.getElementById("oferty-opis").textContent="Każda z nich ma podpisaną umowę z właścicielem i przeszła naszą weryfikację. Nie widzicie nic dla siebie? Zostawcie kryteria — odezwiemy się, gdy pojawi się pasująca.";
+    dane.oferty.forEach(function(o){ lista.appendChild(karta(o)); });
+    lista.hidden=false;
+  }).catch(function(){});
 })();
 
 })();
