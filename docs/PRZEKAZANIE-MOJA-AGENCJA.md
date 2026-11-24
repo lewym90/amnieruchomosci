@@ -265,6 +265,9 @@ YAML (`tytul`, `opis`, `slug`, `jezyk`, `data`, `stan_prawny`, `powiazane`, `zro
   zamiast niego wystarczy prosty parser trzech kresek i par `klucz: wartość`).
 - Import: ta sama komenda `importuj_tresc_strony` wczytuje też `zrodla/poradniki/<jezyk>/*.md`.
 - W panelu: lista poradników, edytor Markdown z podglądem, data „stan prawny na”, publikacja i historia.
+- `stan_prawny` to konkretna data (np. „24 listopada 2026”). Pół roku po niej poradnik trafia do panelu dnia
+  jako „do ponownego sprawdzenia”: przepisy i stawki się zmieniają (np. taksa notarialna od 5 listopada 2026 r.).
+  Wpisy w `zrodla` to opis źródła i, gdzie się da, adres URL — na stronie wyświetlane jako lista pod poradnikiem.
 - Na stronie głównej: blok „Poradniki” (3 najnowsze) przed sekcją FAQ.
 
 Poradniki opisują przepisy (podatki, spadki, zabytki), więc przed publikacją autor da je do przejrzenia

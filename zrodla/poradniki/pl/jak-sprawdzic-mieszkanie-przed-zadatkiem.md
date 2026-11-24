@@ -1,23 +1,26 @@
 ---
 tytul: "Jak sprawdzić mieszkanie przed wpłatą zadatku: lista dla kupującego"
-opis: "Co sprawdzić przed podpisaniem umowy przedwstępnej i wpłatą zadatku: księga wieczysta, meldunek, wspólnota, plan miejscowy, a w Krakowie także zabytki i ryzyko powodziowe."
+opis: "Co sprawdzić przed umową przedwstępną i zadatkiem: księga wieczysta, meldunek, wspólnota, plan miejscowy, a w Krakowie też zabytki i powódź."
 slug: jak-sprawdzic-mieszkanie-przed-zadatkiem
 jezyk: pl
 data: 2026-11-24
-stan_prawny: "listopad 2026"
+stan_prawny: "24 listopada 2026"
 powiazane: raport
 zrodla:
-  - "Kodeks cywilny, art. 389, 390, 394, 678"
-  - "https://ekw.ms.gov.pl"
-  - "https://muratordom.pl/prawo/finanse/przedstepna-umowa-sprzedazy-nieruchomosci-jaka-jest-roznica-miedzy-zaliczka-zadatkiem-aa-2upH-F5qH-1ity.html"
-  - "https://bezprawnik.pl/umowa-przedwstepna-przy-zakupie-nieruchomosci/"
-  - "https://www.wroclaw.pl/poradnik-mieszkanca/pytanie/jak-otrzymac-zaswiadczenia-z-akt-ewidencji-ludnosci"
-  - "https://bankier.pl/wiadomosc/Meldunek-moze-zablokowac-sprzedaz-mieszkania-Kupujacy-sie-boja-8879934.html"
+  - "Kodeks cywilny, art. 389, 390, 394, 678; Kodeks rodzinny i opiekuńczy, art. 37 § 1"
+  - "Elektroniczne Księgi Wieczyste: https://ekw.ms.gov.pl"
+  - "Zadatek a zaliczka: https://muratordom.pl/prawo/finanse/przedstepna-umowa-sprzedazy-nieruchomosci-jaka-jest-roznica-miedzy-zaliczka-zadatkiem-aa-2upH-F5qH-1ity.html"
+  - "Umowa przedwstępna: https://bezprawnik.pl/umowa-przedwstepna-przy-zakupie-nieruchomosci/"
+  - "Zaświadczenie z rejestru mieszkańców, opłata i termin: https://www.wroclaw.pl/poradnik-mieszkanca/pytanie/jak-otrzymac-zaswiadczenia-z-akt-ewidencji-ludnosci"
+  - "Meldunek przy sprzedaży: https://bankier.pl/wiadomosc/Meldunek-moze-zablokowac-sprzedaz-mieszkania-Kupujacy-sie-boja-8879934.html"
+  - "Plany miejscowe w Krakowie (stan na 14 listopada 2026 r.): https://bip.krakow.pl/?bip_id=1&mmi=412"
+  - "Miejski System Informacji Przestrzennej: https://msip.krakow.pl"
+  - "Obszar ograniczonego użytkowania lotniska Kraków-Balice, uchwała Sejmiku nr XXXII/470/09: https://krakowairport.pl//storage/2025-12/regulamin-2025-1764596334VVLgc.pdf"
+  - "Obszar górniczy „Bochnia I”: https://jbc.bj.uj.edu.pl/Content/696742"
 ---
 
-Zadatek to zwykle kilka lub kilkanaście procent ceny. Po jego wpłacie wycofanie się kosztuje, a sprzedający może
-zatrzymać pieniądze. Dlatego sprawdzenie mieszkania warto zrobić **przed** podpisaniem umowy przedwstępnej,
-a nie po niej.
+Zadatek to zwykle niemała kwota. Po jego wpłacie wycofanie się kosztuje, a sprzedający może zatrzymać pieniądze.
+Dlatego mieszkanie warto sprawdzić **przed** podpisaniem umowy przedwstępnej, a nie po niej.
 
 ## Zadatek czy zaliczka
 
@@ -30,7 +33,7 @@ a nie po niej.
 
 Umowa w zwykłej formie pisemnej wystarczy, żeby działał zadatek. Ale tylko umowa przedwstępna w **formie aktu
 notarialnego** pozwala żądać w sądzie zawarcia umowy sprzedaży, gdy druga strona się wycofuje. Przy zwykłej formie
-pisemnej zostają zadatek i odszkodowanie.
+pisemnej zostaje zadatek albo odszkodowanie za szkodę poniesioną przez to, że liczyło się na zawarcie umowy.
 
 Roszczenia z umowy przedwstępnej przedawniają się z upływem roku od dnia, w którym miała zostać zawarta umowa
 sprzedaży.
@@ -39,12 +42,12 @@ sprzedaży.
 
 ### 1. Księga wieczysta
 
-Treść księgi jest bezpłatnie dostępna w internecie (Elektroniczne Księgi Wieczyste: ekw.ms.gov.pl), także
-w aplikacji mObywatel. Warto przeczytać **wszystkie cztery działy**, a nie tylko pierwszą stronę:
+Treść księgi można bezpłatnie przeglądać w internecie, w serwisie Elektroniczne Księgi Wieczyste (ekw.ms.gov.pl).
+Warto przeczytać **wszystkie cztery działy**, a nie tylko pierwszą stronę:
 
-- **Dział I:** opis lokalu, powierzchnia, przynależności (piwnica, komórka). Czy zgadzają się z ogłoszeniem?
+- **Dział I:** opis lokalu, powierzchnia, pomieszczenia przynależne (piwnica, komórka). Czy zgadzają się z ogłoszeniem?
 - **Dział II:** właściciel. Czy to na pewno osoba, która sprzedaje? Czy wszyscy współwłaściciele podpiszą umowę?
-- **Dział III:** służebności, dożywocie, prawa osób trzecich, wzmianki o egzekucji.
+- **Dział III:** służebności, dożywocie, prawa osób trzecich, ostrzeżenia o egzekucji.
 - **Dział IV:** hipoteki. Jeśli jest hipoteka, w umowie trzeba opisać, jak zostanie spłacona i wykreślona.
 
 Ważne są też **wzmianki**, czyli informacje o złożonych, ale jeszcze nierozpatrzonych wnioskach. Wzmianka może
@@ -58,9 +61,9 @@ po spadku, trzeba sprawdzić, czy dziedziczenie zostało potwierdzone i czy podp
 
 ### 3. Kto jest zameldowany i kto mieszka
 
-Zaświadczenie o liczbie osób zameldowanych w lokalu (lub o ich braku) wydaje urząd gminy na wniosek właściciela.
-Zwykle kosztuje 17 zł i jest gotowe w ciągu 7 dni. Kupujący sam go nie uzyska, więc trzeba poprosić o nie
-sprzedającego.
+Zaświadczenie o osobach zameldowanych w lokalu (albo o ich braku) wydaje urząd gminy osobie, która ma w tym interes
+prawny, czyli na przykład właścicielowi. Opłata skarbowa za zaświadczenie wynosi 17 zł, a urząd ma na jego wydanie
+do 7 dni. Kupujący zwykle nie uzyska go sam, więc trzeba poprosić o nie sprzedającego.
 
 Meldunek nie daje prawa do mieszkania. Ważniejsze jest, czy ktoś mieszka w nim na podstawie umowy: przy sprzedaży
 mieszkania wynajętego **nabywca wstępuje w umowę najmu** na miejsce sprzedającego.
@@ -72,22 +75,23 @@ planowane remonty (np. elewacja, dach), kredyt wspólnoty, zasady najmu krótkot
 
 ### 5. Plan miejscowy i otoczenie
 
-Czy dla terenu obowiązuje miejscowy plan zagospodarowania przestrzennego i co przewiduje dla działek obok? W Krakowie
-plany są dostępne w Miejskim Systemie Informacji Przestrzennej, w gminach podkrakowskich w BIP i serwisach
-geoportalowych gmin.
+Czy dla terenu obowiązuje miejscowy plan zagospodarowania przestrzennego i co przewiduje dla działek obok? W połowie
+listopada 2026 roku plany miejscowe obejmowały 82,5% powierzchni Krakowa. Plany są dostępne w Biuletynie Informacji
+Publicznej miasta i w Miejskim Systemie Informacji Przestrzennej (msip.krakow.pl), a w gminach podkrakowskich
+w ich biuletynach i serwisach mapowych.
 
 W Krakowie i okolicach warto dodatkowo sprawdzić:
 
-- czy budynek jest wpisany do rejestru zabytków lub gminnej ewidencji zabytków albo leży w strefie ochrony
-  konserwatorskiej,
-- mapy zagrożenia powodziowego (Wisła, Wilga, Prądnik, Dłubnia, Serafa),
-- obszar ograniczonego użytkowania wokół lotniska Kraków-Balice,
-- w rejonie Wieliczki i Bochni: wpływ dawnych wyrobisk kopalń soli.
+- czy budynek jest wpisany do rejestru zabytków lub gminnej ewidencji zabytków albo leży na obszarze chronionym,
+- mapy zagrożenia powodziowego publikowane przez Wody Polskie (w Krakowie m.in. Wisła, Wilga, Prądnik, Dłubnia,
+  Serafa),
+- czy nieruchomość leży w obszarze ograniczonego użytkowania lotniska Kraków-Balice,
+- w rejonie Wieliczki i Bochni: czy nieruchomość leży na terenie górniczym kopalni soli.
 
 ### 6. Stan faktyczny
 
 Metraż z dokumentów a rzeczywisty (warto zmierzyć), zgodność układu z rzutem, widoczne przeróbki, stan instalacji,
-ślady wilgoci. Przeróbki bez zgody (np. przesunięte ściany, przeniesiona kuchnia) mogą wymagać legalizacji.
+ślady wilgoci. Przeróbki bez wymaganych zgód (np. przesunięte ściany, przeniesiona kuchnia) mogą wymagać legalizacji.
 
 ### 7. Treść umowy przedwstępnej
 
@@ -102,5 +106,5 @@ bezpośrednio od właściciela. Raport dostają Państwo w ciągu **5 dni robocz
 podpisem i wykazem źródeł. Raport nie jest opinią prawną i nie zawiera rekomendacji: pokazuje fakty, a decyzja
 należy do Państwa.
 
-*Poradnik opisuje stan prawny z listopada 2026 roku. Nie jest poradą prawną. Przed podpisaniem umowy warto
+*Poradnik opisuje stan prawny na 24 listopada 2026 roku. Nie jest poradą prawną. Przed podpisaniem umowy warto
 skonsultować jej treść z notariuszem lub prawnikiem.*
