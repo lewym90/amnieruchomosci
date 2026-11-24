@@ -86,7 +86,7 @@ a jednostką (osobne reguły dla pl, en, uk). Panel powinien pokazywać tę ści
 obok pól tekstowych.
 
 Pola `[[…]]` dostępne w treści: `nazwa_pelna`, `adres`, `nip`, `regon`, `telefon`,
-`email`, `stawka`, `okres_przechowywania_zapytan`, `polisy`, `rok`, `formularz_dane`,
+`email`, `stawka`, `cena_raportu`, `okres_przechowywania_zapytan`, `polisy`, `rok`, `formularz_dane`,
 `poza_eog`.
 
 ---
@@ -121,7 +121,7 @@ z programu.
 | Okres przechowywania zapytań | **`zgodnosc.UstawieniaRetencji.lead_miesiace`** (już istnieje) | Pole `[[okres_przechowywania_zapytan]]` w RODO wylicza się z tej wartości („12 miesięcy”). Nie dublować. |
 | Oferty na stronie | **`publikacja.strona_www`** (już istnieje) | Rozszerzyć dane (sekcja 6). |
 | Treść strony | **nowe** `strona.TrescStrony` | Wersjonowana, opis niżej. |
-| Ustawienia strony | **nowe** `strona.UstawieniaStrony` (jeden wiersz) | `publiczna` (bool, domyślnie False), `adres` (domena), `uklad` (JSON: lista `{sekcja, widoczna}` w kolejności), `zapytania_wlaczone`, `stawka` (tekst do FAQ). |
+| Ustawienia strony | **nowe** `strona.UstawieniaStrony` (jeden wiersz) | `publiczna` (bool, domyślnie False), `adres` (domena), `uklad` (JSON: lista `{sekcja, widoczna}` w kolejności), `zapytania_wlaczone`, `stawka` i `cena_raportu` (teksty do FAQ i usług). |
 | Zdjęcia strony | **nowe** `strona.ZdjecieStrony` | `klucz` (`raport`, `zespol`, `og`), `plik`, `wygenerowane_ai`, `rodzaj_modyfikacji` (zasada 5). Rozmiary 700/1400 i 450/900 generowane przy zapisie, bez EXIF (jak `biuro/miniatury.py`). |
 | Zapytania ze strony | **nowe** `klienci.ZapytanieZeStrony` | Opis w sekcji 7. Widoczne na tej samej liście co leady z poczty (kolumna „Źródło”). |
 
@@ -212,7 +212,10 @@ Content-Type: application/json
   // rodzaj = kupno:
   "cel": "szukam" | "raport",
   "nieruchomosc": "…", "lokalizacja": "…", "kryteria": "…",
-  "oferta": "AM-12" | ""                ← gdy klient pyta o konkretną ofertę
+  "oferta": "AM-12" | "",               ← gdy klient pyta o konkretną ofertę
+  // tylko cel = raport (zamówienie Raportu Weryfikacyjnego):
+  "link": "link do ogłoszenia albo adres",
+  "termin_zadatku": "2026-12-05" | ""
 }
 ```
 
@@ -237,11 +240,36 @@ Wymagania:
   - `sprzedaz_najem` → nowy lead właściciela (rodzaj sprawy, nieruchomość, sytuacja prawna),
   - `kupno` + `szukam` → lead i szkic `Poszukiwanie` do potwierdzenia przez biuro
     (wtedy zadziałają istniejące dopasowania i powiadomienia),
-  - `kupno` + `raport` → lead „Raport Weryfikacyjny”,
+  - `kupno` + `raport` → zamówienie Raportu Weryfikacyjnego: lead z linkiem, terminem zadatku
+    i terminem oddania raportu (5 dni roboczych od przyjęcia zlecenia, z pominięciem świąt:
+    `apps/kalendarz/swieta.py`), widoczne na ekranie Dziś. Termin wyliczany w kodzie ma test (zasada 11),
   - `oferta` ustawione → powiązanie z ofertą o numerze `AM-<pk>`.
 - Powiadomienie biura o nowym zapytaniu (istniejący moduł powiadomień).
 - Gdy zapytania są włączone, okno RODO samo pokazuje tekst `formularz_program`
   zamiast `formularz_poczta` (`[[formularz_dane]]`).
+
+---
+
+## 7a. Poradniki
+
+W repozytorium strony są gotowe treści pięciu poradników (`zrodla/poradniki/pl/*.md`): Markdown z nagłówkiem
+YAML (`tytul`, `opis`, `slug`, `jezyk`, `data`, `stan_prawny`, `powiazane`, `zrodla`).
+
+- Model `strona.Poradnik`: `jezyk`, `slug`, `tytul`, `opis` (≤ 160 znaków), `tresc` (Markdown),
+  `stan_prawny`, `zrodla` (lista), `powiazane` (sekcja strony, do której prowadzi wezwanie na końcu),
+  `status` (szkic/opublikowany/archiwalny, jak `TrescStrony`), `opublikowano_at`.
+- Adresy: `/poradniki/` (lista) i `/poradniki/<slug>/` (+ `/en/…`, `/uk/…`, gdy powstaną tłumaczenia).
+  JSON-LD `Article`, `hreflang`, wpisy w `sitemap.xml`.
+- Renderowanie Markdown: `markdown-it-py` z wyłączonym surowym HTML (jedna nowa zależność, popularna
+  i bezpieczna domyślnie). Nagłówek YAML przy imporcie czyta PyYAML (jeśli nie ma go w programie,
+  zamiast niego wystarczy prosty parser trzech kresek i par `klucz: wartość`).
+- Import: ta sama komenda `importuj_tresc_strony` wczytuje też `zrodla/poradniki/<jezyk>/*.md`.
+- W panelu: lista poradników, edytor Markdown z podglądem, data „stan prawny na”, publikacja i historia.
+- Na stronie głównej: blok „Poradniki” (3 najnowsze) przed sekcją FAQ.
+
+Poradniki opisują przepisy (podatki, spadki, zabytki), więc przed publikacją autor da je do przejrzenia
+prawnikowi. Panel pokazuje przy każdym poradniku datę „stan prawny na” i przypomina o przeglądzie
+po 12 miesiącach.
 
 ---
 
@@ -252,7 +280,7 @@ Program powinien pilnować tej listy (blokada przełącznika „Strona publiczna
 - [ ] Firma zarejestrowana: NIP, REGON, adres, nazwa s.c. w `DaneSprzedawcy`
 - [ ] Telefon i e-mail biura
 - [ ] Polisy OC obojga wspólników (numer, towarzystwo, data ważności)
-- [ ] Stawka wynagrodzenia w FAQ
+- [ ] Stawka wynagrodzenia w FAQ i cena Raportu Weryfikacyjnego
 - [ ] Prawdziwe zdjęcia zamiast AI (albo świadoma decyzja autora, że zostają z podpisem)
 - [ ] Domena i certyfikat
 - [ ] Teksty prawne potwierdzone przez prawnika: RODO (współadministratorzy w s.c.),

@@ -212,7 +212,7 @@ document.addEventListener("click", function(e){
   var a = e.target.closest("[data-tab]"); if (!a || !tabs.length) return;
   selTab(a.dataset.tab);
   if (a.dataset.hard){ var r = document.querySelector('#f-sell input[name="sprawa"][value="sprawa_trudna"]'); if (r) r.checked = true; }
-  if (a.dataset.raport){ var q = document.querySelector('#f-buy input[name="cel"][value="raport"]'); if (q) q.checked = true; }
+  if (a.dataset.raport){ var q = document.querySelector('#f-buy input[name="cel"][value="raport"]'); if (q){ q.checked = true; polaRaportu(); } }
 });
 
 /* ---------- formularze ---------- */
@@ -276,10 +276,13 @@ function daneZapytania(form){
     dane.cel = wybrany(form, "cel"); dane.nieruchomosc = E.rodzaj.value;
     dane.lokalizacja = E.lokalizacja.value.trim(); dane.kryteria = E.kryteria.value.trim();
     dane.oferta = ofertaZapytanie;
+    if (dane.cel === "raport"){ dane.link = E.link.value.trim(); dane.termin_zadatku = E.termin_zadatku.value; }
     linie = [
       [T.pola.cel, F.cele[dane.cel]], [T.pola.rodzaj, F.rodzaje[dane.nieruchomosc]],
       [T.pola.lokalizacja, dane.lokalizacja || "–"], [T.pola.kryteria, dane.kryteria || "–"]
     ];
+    if (dane.link) linie.push([T.pola.link, dane.link]);
+    if (dane.termin_zadatku) linie.push([T.pola.termin_zadatku, dane.termin_zadatku]);
     dane.temat = fmt(T.temat, { opis: F.cele[dane.cel] });
   }
   linie.push(["", ""], [T.pola.imie, dane.imie]);
@@ -305,7 +308,7 @@ function pokazWynik(form, tryb, z){
   }
   var n = el("button", "btn ghost", T.nowe); n.type = "button";
   n.addEventListener("click", function(){
-    form.reset(); form.hidden = false; d.classList.remove("show"); d.textContent = ""; ofertaZapytanie = "";
+    form.reset(); polaRaportu(); form.hidden = false; d.classList.remove("show"); d.textContent = ""; ofertaZapytanie = "";
     if (form === fs) go(1);
     var pierwsze = form.querySelector("input:not([type=radio]):not([type=hidden]), select"); if (pierwsze && form !== fs) pierwsze.focus();
   });
@@ -325,6 +328,9 @@ function wyslij(form, err){
     .catch(function(){ err.textContent = T.blad_wysylki; if (D.email) pokazWynik(form, "poczta", z); })
     .then(function(){ przycisk.removeAttribute("aria-busy"); przycisk.textContent = napis; });
 }
+/* zamówienie Raportu: dodatkowe pola tylko przy tym wyborze */
+function polaRaportu(){ if (!fb) return; var r = wybrany(fb, "cel") === "raport"; fb.querySelector(".tylko-raport").hidden = !r; }
+if (fb){ fb.addEventListener("change", function(e){ if (e.target.name === "cel") polaRaportu(); }); polaRaportu(); }
 if (fs) fs.addEventListener("submit", function(e){ e.preventDefault(); wyslij(fs, document.getElementById("e3")); });
 if (fb) fb.addEventListener("submit", function(e){ e.preventDefault(); wyslij(fb, document.getElementById("e-buy")); });
 

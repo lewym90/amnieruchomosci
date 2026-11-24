@@ -73,6 +73,7 @@ def pola_firmy(w, t):
         "telefon": pole("telefon", puste["telefon"]),
         "email": pole("email", puste["email"]),
         "stawka": pole("stawka", puste["stawka"]),
+        "cena_raportu": pole("cena_raportu", puste["cena_raportu"]),
         "okres_przechowywania_zapytan": pole("okres_przechowywania_zapytan", puste["okres"]),
         "polisy": format_html("; ".join(["{}"] * len(polisy)), *polisy),
         "rok": str(date.today().year),

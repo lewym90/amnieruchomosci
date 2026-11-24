@@ -670,3 +670,4 @@ button.link{background:none;border:0;padding:0;font:inherit;color:var(--gold-l);
 .dlg-oferta .uwaga-jezyk{font-size:.85rem;color:var(--ash);margin:-4px 0 12px}
 .dlg-oferta .cta-row .btn.ghost{min-width:0}
 @media (max-width:820px){.foot > div:nth-child(2) ul{columns:2;column-gap:24px}.foot li{break-inside:avoid}}
+[hidden]{display:none!important}

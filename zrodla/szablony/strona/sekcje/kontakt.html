@@ -81,6 +81,10 @@
             <label class="field"><span>{{ f.rodzaj }}</span><select name="rodzaj">{% for o in f.rodzaje %}<option value="{{ o.wartosc }}">{{ o.tekst }}</option>{% endfor %}</select></label>
             <label class="field"><span>{{ f.lokalizacja_kupno }}</span><input name="lokalizacja" maxlength="160" placeholder="{{ f.lokalizacja_kupno_przyklad }}"></label>
           </div>
+          <div class="grid2 tylko-raport" hidden>
+            <label class="field"><span>{{ f.raport_link }}</span><input name="link" maxlength="300" autocomplete="off"></label>
+            <label class="field"><span>{{ f.raport_termin }}</span><input name="termin_zadatku" type="date"></label>
+          </div>
           <label class="field"><span>{{ f.kryteria }}</span><textarea name="kryteria" maxlength="1200"></textarea></label>
           <label class="field"><span>{{ f.imie }}</span><input name="imie" required autocomplete="given-name" maxlength="80"></label>
           <div class="grid2">

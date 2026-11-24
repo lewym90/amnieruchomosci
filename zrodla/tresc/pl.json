@@ -19,7 +19,8 @@
       "stawka": "stawka",
       "okres": "np. 12 miesięcy",
       "telefon": "telefon",
-      "email": "e-mail"
+      "email": "e-mail",
+      "cena_raportu": "cena raportu"
     },
     "do_uzupelnienia": "do uzupełnienia"
   },
@@ -197,7 +198,7 @@
           "tekst": "Co zawiera raport"
         },
         "dla_kogo": "Kupujący, którzy znaleźli nieruchomość sami lub przez inne biuro",
-        "wynagrodzenie": "Stała cena za raport, niezależnie od tego, czy dojdzie do transakcji"
+        "wynagrodzenie": "Stała cena: [[cena_raportu]], niezależnie od tego, czy dojdzie do transakcji. Raport w 5 dni roboczych."
       },
       {
         "tytul": "Najem",
@@ -215,7 +216,7 @@
   "raport": {
     "kicker": "Raport Weryfikacyjny",
     "tytul": "Dokument, który można położyć na stole i pokazać rodzinie.",
-    "lede": "Raport ma charakter analityczny: zawiera fakty ustalone na podstawie dokumentów i źródeł, ich zestawienie oraz analizę. Każde ustalenie ma wskazane źródło oraz datę i godzinę sprawdzenia. Kupujący otrzymuje raport przed podpisaniem umowy przedwstępnej, w wersji drukowanej, w teczce.",
+    "lede": "Raport ma charakter analityczny: zawiera fakty ustalone na podstawie dokumentów i źródeł, ich zestawienie oraz analizę. Każde ustalenie ma wskazane źródło oraz datę i godzinę sprawdzenia. Kupujący otrzymuje raport przed podpisaniem umowy przedwstępnej, w wersji drukowanej, w teczce. Raport przekazujemy w ciągu 5 dni roboczych od zlecenia. Jeśli urząd lub spółdzielnia wydaje dokument dłużej, zaznaczamy to w raporcie i dosyłamy uzupełnienie.",
     "czym_nie_jest_aria": "Czym raport nie jest",
     "czym_nie_jest": [
       "Nie jest opinią prawną ani poradą w jakiejkolwiek dziedzinie.",
@@ -543,7 +544,7 @@
       {
         "pytanie": "Ile kosztuje współpraca?",
         "odpowiedz": [
-          "Stawka jest jedna i jawna: [[stawka]]. Przy sprzedaży wynagrodzenie płaci wyłącznie sprzedający, po zawarciu umowy sprzedaży w formie aktu notarialnego. Wynagrodzenie przyjmujemy wyłącznie przelewem na rachunek bankowy. Przy sprawach trudnych etap przygotowawczy jest wyceniany osobno. Raport Weryfikacyjny dla kupującego ma stałą cenę."
+          "Stawka jest jedna i jawna: [[stawka]]. Przy sprzedaży wynagrodzenie płaci wyłącznie sprzedający, po zawarciu umowy sprzedaży w formie aktu notarialnego. Wynagrodzenie przyjmujemy wyłącznie przelewem na rachunek bankowy. Przy sprawach trudnych etap przygotowawczy jest wyceniany osobno. Raport Weryfikacyjny dla kupującego ma stałą cenę: [[cena_raportu]], a przekazujemy go w ciągu 5 dni roboczych."
         ]
       },
       {
@@ -729,7 +730,9 @@
       "kryteria": "Kryteria (metraż, liczba pokoi, budżet, termin)",
       "telefon": "Telefon",
       "email": "E-mail",
-      "kontakt_nota": "Wystarczy jedno z nich: telefon albo e-mail."
+      "kontakt_nota": "Wystarczy jedno z nich: telefon albo e-mail.",
+      "raport_link": "Link do ogłoszenia lub adres nieruchomości",
+      "raport_termin": "Termin wpłaty zadatku (jeśli jest ustalony)"
     }
   },
   "stopka": {
@@ -960,7 +963,9 @@
       "cel": "Cel",
       "kryteria": "Kryteria",
       "telefon": "Telefon",
-      "email": "E-mail"
+      "email": "E-mail",
+      "link": "Ogłoszenie lub adres",
+      "termin_zadatku": "Termin zadatku"
     },
     "nie_podano": "nie podano",
     "zgoda_tekst": "Zapoznałem(-am) się z informacją o przetwarzaniu danych osobowych.",

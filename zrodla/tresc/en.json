@@ -19,7 +19,8 @@
       "stawka": "rate",
       "okres": "e.g. 12 months",
       "telefon": "phone",
-      "email": "e-mail"
+      "email": "e-mail",
+      "cena_raportu": "report price"
     },
     "do_uzupelnienia": "to be completed"
   },
@@ -197,7 +198,7 @@
           "tekst": "What the report contains"
         },
         "dla_kogo": "Buyers who found a property themselves or through another agency",
-        "wynagrodzenie": "A fixed price per report, whether or not the purchase goes ahead"
+        "wynagrodzenie": "A fixed price of [[cena_raportu]], whether or not the purchase goes ahead. Report within 5 working days."
       },
       {
         "tytul": "Lettings",
@@ -215,7 +216,7 @@
   "raport": {
     "kicker": "Verification Report",
     "tytul": "A document you can put on the table and show your family.",
-    "lede": "The report is analytical: it sets out facts established from documents and sources, compares them and analyses them. Every finding states its source and the date and time it was checked. The buyer receives the report in print, in a folder, before signing the preliminary agreement.",
+    "lede": "The report is analytical: it sets out facts established from documents and sources, compares them and analyses them. Every finding states its source and the date and time it was checked. The buyer receives the report in print, in a folder, before signing the preliminary agreement. We deliver the report within 5 working days of your order. If an office or a housing cooperative takes longer to issue a document, we note this in the report and send a supplement.",
     "czym_nie_jest_aria": "What the report is not",
     "czym_nie_jest": [
       "It is not a legal opinion or advice of any kind.",
@@ -543,7 +544,7 @@
       {
         "pytanie": "How much does it cost?",
         "odpowiedz": [
-          "There is one published rate: [[stawka]]. On a sale, the fee is paid by the seller only, once the sale agreement has been signed as a notarial deed. We accept payment by bank transfer only. For difficult cases, the preparatory stage is priced separately. The Verification Report for buyers has a fixed price."
+          "There is one published rate: [[stawka]]. On a sale, the fee is paid by the seller only, once the sale agreement has been signed as a notarial deed. We accept payment by bank transfer only. For difficult cases, the preparatory stage is priced separately. The Verification Report for buyers has a fixed price of [[cena_raportu]] and is delivered within 5 working days."
         ]
       },
       {
@@ -735,7 +736,9 @@
       "kryteria": "Criteria (floor area, number of rooms, budget, timing)",
       "telefon": "Phone",
       "email": "E-mail",
-      "kontakt_nota": "One of them is enough: phone or e-mail."
+      "kontakt_nota": "One of them is enough: phone or e-mail.",
+      "raport_link": "Link to the listing or the property address",
+      "raport_termin": "Deposit due date (if agreed)"
     }
   },
   "stopka": {
@@ -962,7 +965,9 @@
       "cel": "Purpose",
       "kryteria": "Criteria",
       "telefon": "Phone",
-      "email": "E-mail"
+      "email": "E-mail",
+      "link": "Listing or address",
+      "termin_zadatku": "Deposit due"
     },
     "nie_podano": "not given",
     "zgoda_tekst": "I have read the information on the processing of personal data.",
