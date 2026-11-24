@@ -26,7 +26,14 @@ function menuOtworz(o){
 burger.addEventListener("click", function(){ menuOtworz(burger.getAttribute("aria-expanded") !== "true"); });
 menu.addEventListener("click", function(e){ var a = e.target.closest("a"); if (a && a.getAttribute("href").charAt(0) === "#") menuOtworz(false); });
 document.addEventListener("keydown", function(e){
-  if (e.key === "Escape" && menu.classList.contains("open")){ menuOtworz(false); burger.focus(); }
+  if (!menu.classList.contains("open")) return;
+  if (e.key === "Escape"){ menuOtworz(false); burger.focus(); return; }
+  if (e.key === "Tab"){
+    /* menu zasłania cały ekran: Tab krąży między przyciskiem menu a jego linkami */
+    var el = [burger].concat([].slice.call(menu.querySelectorAll("a")));
+    var i = el.indexOf(document.activeElement), n = e.shiftKey ? i - 1 : i + 1;
+    if (i === -1 || n < 0 || n >= el.length){ e.preventDefault(); el[i === -1 ? 0 : (n < 0 ? el.length - 1 : 0)].focus(); }
+  }
 });
 
 /* ---------- hero canvas: rzut mieszkania + skanowanie ---------- */
@@ -219,7 +226,6 @@ function go(n){
   var f = fs.querySelector(".fstep.cur input:not([type=radio]), .fstep.cur select"); if (f && n > 1) f.focus();
 }
 function req(el){ var ok = el.type === "checkbox" ? el.checked : el.value.trim().length > 0; el.setAttribute("aria-invalid", ok ? "false" : "true"); return ok; }
-function validContact(v){ v = v.trim(); return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) || v.replace(/[^\d]/g, "").length >= 9; }
 function wybrany(form, nazwa){ var el = form.querySelector('[name="' + nazwa + '"]:checked'); return el ? el.value : ""; }
 if (fs) fs.addEventListener("click", function(e){
   if (e.target.closest("[data-next]")){
@@ -228,17 +234,17 @@ if (fs) fs.addEventListener("click", function(e){
   }
   if (e.target.closest("[data-prev]")) go(Math.max(cur - 1, 1));
 });
-/* pole „Telefon lub e-mail”: klawiatura telefonu, dopóki ktoś nie zacznie pisać liter */
-[].forEach.call(document.querySelectorAll('input[name="kontakt"]'), function(el){
-  el.setAttribute("inputmode", "tel");
-  el.addEventListener("input", function(){ el.setAttribute("inputmode", /[a-z@]/i.test(el.value) ? "email" : "tel"); });
-});
-
 function sprawdz(form, err){
-  var E = form.elements, ok = true;
-  [E.imie, E.kontakt, E.zgoda].forEach(function(x){ if (!req(x)) ok = false; });
-  if (ok && !validContact(E.kontakt.value)){ E.kontakt.setAttribute("aria-invalid", "true"); err.textContent = T.blad_kontakt; E.kontakt.focus(); return false; }
-  if (!ok){ err.textContent = !E.zgoda.checked && E.imie.value.trim() && E.kontakt.value.trim() ? T.blad_zgoda : T.blad_brak; return false; }
+  var E = form.elements, tel = E.telefon.value.trim(), mail = E.email.value.trim();
+  [E.imie, E.telefon, E.email].forEach(function(x){ x.setAttribute("aria-invalid", "false"); });
+  var okImie = req(E.imie), okZgoda = req(E.zgoda);
+  if (!okImie || (!tel && !mail)){
+    if (!tel && !mail){ E.telefon.setAttribute("aria-invalid", "true"); E.email.setAttribute("aria-invalid", "true"); }
+    err.textContent = T.blad_brak; (okImie ? E.telefon : E.imie).focus(); return false;
+  }
+  if (tel && tel.replace(/[^\d]/g, "").length < 9){ E.telefon.setAttribute("aria-invalid", "true"); err.textContent = T.blad_telefon; E.telefon.focus(); return false; }
+  if (mail && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail)){ E.email.setAttribute("aria-invalid", "true"); err.textContent = T.blad_email; E.email.focus(); return false; }
+  if (!okZgoda){ err.textContent = T.blad_zgoda; E.zgoda.focus(); return false; }
   err.textContent = ""; return true;
 }
 function daneZapytania(form){
@@ -247,7 +253,8 @@ function daneZapytania(form){
     rodzaj: sprzedaz ? "sprzedaz_najem" : "kupno",
     jezyk: JEZYK,
     imie: E.imie.value.trim(),
-    kontakt: E.kontakt.value.trim(),
+    telefon: E.telefon.value.trim(),
+    email: E.email.value.trim(),
     zgoda: E.zgoda.checked,
     zgoda_tekst: T.zgoda_tekst,
     strona_www: E.strona_www.value,
@@ -275,7 +282,10 @@ function daneZapytania(form){
     ];
     dane.temat = fmt(T.temat, { opis: F.cele[dane.cel] });
   }
-  linie.push(["", ""], [T.pola.imie, dane.imie], [T.pola.kontakt, dane.kontakt], ["", ""], ["", T.zgoda_tekst]);
+  linie.push(["", ""], [T.pola.imie, dane.imie]);
+  if (dane.telefon) linie.push([T.pola.telefon, dane.telefon]);
+  if (dane.email) linie.push([T.pola.email, dane.email]);
+  linie.push(["", ""], ["", T.zgoda_tekst]);
   var tekst = linie.map(function(l){ return l[0] ? l[0] + ": " + l[1] : l[1]; }).join("\n");
   return { dane: dane, tekst: tekst };
 }

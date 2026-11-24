@@ -708,7 +708,6 @@
       ],
       "uwaga": "Prosimy nie podawać tu numeru księgi wieczystej, numeru PESEL ani skanów dokumentów. O dokumenty poprosimy podczas spotkania.",
       "imie": "Imię",
-      "kontakt": "Telefon lub e-mail",
       "wiadomosc": "Kilka słów o sprawie (opcjonalnie)",
       "zgoda": "Zapoznałem(-am) się z [informacją o przetwarzaniu danych osobowych](okno:rodo).",
       "dalej": "Dalej",
@@ -727,7 +726,10 @@
       ],
       "lokalizacja_kupno": "Lokalizacja",
       "lokalizacja_kupno_przyklad": "np. Kraków, Dębniki",
-      "kryteria": "Kryteria (metraż, liczba pokoi, budżet, termin)"
+      "kryteria": "Kryteria (metraż, liczba pokoi, budżet, termin)",
+      "telefon": "Telefon",
+      "email": "E-mail",
+      "kontakt_nota": "Wystarczy jedno z nich: telefon albo e-mail."
     }
   },
   "stopka": {
@@ -934,9 +936,8 @@
     "transakcje_rok": "{liczba} {forma} w {rok} r.",
     "krok": "Krok {n} z 3",
     "blad_lokalizacja": "Prosimy podać miejscowość lub dzielnicę.",
-    "blad_kontakt": "Prosimy podać poprawny numer telefonu lub adres e-mail.",
     "blad_zgoda": "Prosimy potwierdzić zapoznanie się z informacją o przetwarzaniu danych osobowych.",
-    "blad_brak": "Prosimy uzupełnić imię oraz telefon lub e-mail.",
+    "blad_brak": "Prosimy podać imię oraz telefon lub e-mail.",
     "blad_wysylki": "Nie udało się wysłać zapytania. Można spróbować ponownie albo wysłać je z programu pocztowego.",
     "wysylanie": "Wysyłanie…",
     "wyslane_tytul": "Dziękujemy. Zapytanie dotarło.",
@@ -956,15 +957,18 @@
       "sytuacja": "Sytuacja prawna",
       "wiadomosc": "Wiadomość",
       "imie": "Imię",
-      "kontakt": "Kontakt",
       "cel": "Cel",
-      "kryteria": "Kryteria"
+      "kryteria": "Kryteria",
+      "telefon": "Telefon",
+      "email": "E-mail"
     },
     "nie_podano": "nie podano",
     "zgoda_tekst": "Zapoznałem(-am) się z informacją o przetwarzaniu danych osobowych.",
     "wiecej_pytan": "Więcej pytań ({n})",
     "mniej_pytan": "Mniej pytań",
     "pietra_od_jedynki": false,
-    "m2": "m²"
+    "m2": "m²",
+    "blad_telefon": "Numer telefonu wygląda na niepełny. Prosimy go sprawdzić.",
+    "blad_email": "Adres e-mail wygląda na niepoprawny. Prosimy go sprawdzić."
   }
 }

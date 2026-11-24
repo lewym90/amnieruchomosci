@@ -197,7 +197,7 @@ Content-Type: application/json
 {
   "rodzaj": "sprzedaz_najem" | "kupno",
   "jezyk": "pl" | "en" | "uk",
-  "imie": "…", "kontakt": "telefon albo e-mail",
+  "imie": "…", "telefon": "…", "email": "…",   ← co najmniej jedno z dwóch
   "zgoda": true, "zgoda_tekst": "Zapoznałem(-am) się z informacją…",
   "strona_www": "",                      ← pułapka na boty (ukryte pole)
   "czas_wypelniania_ms": 41250,
@@ -224,8 +224,9 @@ Wymagania:
 - `strona_www` niepuste albo `czas_wypelniania_ms` < 3000 → odpowiedź `201`, ale nic
   nie zapisujemy (bot nie wie, że został odsiany).
 - Limit 5 zapytań na godzinę z jednego adresu IP (cache Django).
-- Limity długości jak w formularzu (imię 80, kontakt 120, teksty 1200), `zgoda` musi
-  być `true`.
+- Limity długości jak w formularzu (imię 80, telefon 30, e-mail 120, teksty 1200).
+  Wymagane: imię, `zgoda` = `true` i co najmniej jedno z pól `telefon` / `email`
+  (telefon: co najmniej 9 cyfr, e-mail: poprawny format).
 - CORS na czas przejścia: odpowiedź na `OPTIONS` (`Access-Control-Allow-Methods: POST`,
   `Access-Control-Allow-Headers: Content-Type`) i `Access-Control-Allow-Origin`
   z `DJANGO_ADRES_STRONY_WWW`. Widok `csrf_exempt`, przyjmuje wyłącznie JSON.

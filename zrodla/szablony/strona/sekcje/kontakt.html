@@ -55,10 +55,12 @@
 
           <fieldset class="fstep" data-step="3">
             <legend class="sr">{{ f.krok3 }}</legend>
+            <label class="field"><span>{{ f.imie }}</span><input name="imie" required autocomplete="given-name" maxlength="80"></label>
             <div class="grid2">
-              <label class="field"><span>{{ f.imie }}</span><input name="imie" required autocomplete="given-name" maxlength="80"></label>
-              <label class="field"><span>{{ f.kontakt }}</span><input name="kontakt" required autocomplete="on" maxlength="120"></label>
+              <label class="field"><span>{{ f.telefon }}</span><input name="telefon" type="tel" inputmode="tel" autocomplete="tel" maxlength="30"></label>
+              <label class="field"><span>{{ f.email }}</span><input name="email" type="email" inputmode="email" autocomplete="email" maxlength="120" spellcheck="false"></label>
             </div>
+            <p class="hint">{{ f.kontakt_nota }}</p>
             <label class="field"><span>{{ f.wiadomosc }}</span><textarea name="wiadomosc" maxlength="1200"></textarea></label>
             <label class="hp" aria-hidden="true">Strona www<input name="strona_www" tabindex="-1" autocomplete="off"></label>
             <label class="consent"><input type="checkbox" name="zgoda" required><span>{{ f.zgoda|tekst:pola }}</span></label>
@@ -80,10 +82,12 @@
             <label class="field"><span>{{ f.lokalizacja_kupno }}</span><input name="lokalizacja" maxlength="160" placeholder="{{ f.lokalizacja_kupno_przyklad }}"></label>
           </div>
           <label class="field"><span>{{ f.kryteria }}</span><textarea name="kryteria" maxlength="1200"></textarea></label>
+          <label class="field"><span>{{ f.imie }}</span><input name="imie" required autocomplete="given-name" maxlength="80"></label>
           <div class="grid2">
-            <label class="field"><span>{{ f.imie }}</span><input name="imie" required autocomplete="given-name" maxlength="80"></label>
-            <label class="field"><span>{{ f.kontakt }}</span><input name="kontakt" required autocomplete="on" maxlength="120"></label>
+            <label class="field"><span>{{ f.telefon }}</span><input name="telefon" type="tel" inputmode="tel" autocomplete="tel" maxlength="30"></label>
+            <label class="field"><span>{{ f.email }}</span><input name="email" type="email" inputmode="email" autocomplete="email" maxlength="120" spellcheck="false"></label>
           </div>
+          <p class="hint">{{ f.kontakt_nota }}</p>
           <label class="hp" aria-hidden="true">Strona www<input name="strona_www" tabindex="-1" autocomplete="off"></label>
           <label class="consent"><input type="checkbox" name="zgoda" required><span>{{ f.zgoda|tekst:pola }}</span></label>
           <p class="err" id="e-buy" role="alert"></p>

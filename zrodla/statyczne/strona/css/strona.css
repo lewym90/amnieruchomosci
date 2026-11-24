@@ -52,7 +52,7 @@ p{margin:0 0 1em;max-width:62ch}
 .lede{font-size:clamp(1.08rem,.5vw + .95rem,1.25rem);color:var(--bone);max-width:56ch}
 .muted{color:var(--ash)}
 section{position:relative}
-.sec{padding:clamp(88px,11vw,160px) 0}
+.sec{padding:clamp(72px,8vw,120px) 0}
 .kicker{font-family:var(--display);color:var(--gold);font-size:1.05rem;margin-bottom:22px;display:block}
 
 /* ---------- buttons ---------- */
@@ -222,7 +222,7 @@ html.js header.nav.open{background:var(--onyx);backdrop-filter:none;-webkit-back
 .steps h3{margin-bottom:8px}
 .steps p{color:#CFCBC2}
 
-.weekly{margin-top:70px;border:1px solid var(--line);background:var(--graphite)}
+.weekly{margin-top:56px;border:1px solid var(--line);background:var(--graphite)}
 .weekly .bar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 22px;border-bottom:1px solid var(--line);font-size:.86rem;color:var(--ash);flex-wrap:wrap}
 .weekly .bar b{color:var(--bone);font-weight:500}
 .weekly .body{padding:24px 22px 26px}
@@ -300,7 +300,7 @@ html.js header.nav.open{background:var(--onyx);backdrop-filter:none;-webkit-back
 @media (max-width:620px){.never div{grid-template-columns:1fr;gap:6px}}
 
 /* ---------- tagline moment ---------- */
-.motto{padding:clamp(90px,14vw,190px) 0;text-align:center;overflow:hidden}
+.motto{padding:clamp(56px,8vw,120px) 0;text-align:center;overflow:hidden}
 .motto p{font-family:var(--display);font-size:clamp(3rem,10vw,9.6rem);line-height:1;padding:.14em 0 .24em;margin:0 auto;max-width:none;color:transparent;-webkit-text-stroke:1px rgba(200,164,77,.45);background:linear-gradient(90deg,var(--gold) 0 var(--f,0%),transparent var(--f,0%) 100%);-webkit-background-clip:text;background-clip:text}
 .motto small{display:block;margin-top:30px;color:var(--ash);font-size:.95rem}
 
@@ -533,7 +533,7 @@ html:not(.js) .kicker::after{width:56px}
 .cases li{transition:padding-left .4s var(--ease),color .3s}
 @media (hover:hover){.cases li:hover{padding-left:12px;color:var(--gold-l)}}
 .never div{transition:background .3s}
-@media (max-width:900px){.sec{padding:84px 0}.about figure::after{inset:10px -8px -10px 10px}}
+@media (max-width:900px){.sec{padding:64px 0}.about figure::after{inset:10px -8px -10px 10px}}
 
 @media (prefers-reduced-motion: reduce){
   html.js .hero .wrap > div > *,html.js .hero .check,html.js .rv{opacity:1!important;transform:none!important}
@@ -560,8 +560,8 @@ html.seen #intro{display:none}
 .wk>summary::after{content:"+";float:right;color:var(--gold)}
 .wk[open]>summary::after{content:"−"}
 .wk .weekly{margin-top:0;border-top:0}
-@media (min-width:901px){.wk>summary{display:none}.wk .weekly{margin-top:70px;border-top:1px solid var(--line)}}
-.band{padding:0 0 clamp(70px,9vw,120px)}
+@media (min-width:901px){.wk>summary{display:none}.wk .weekly{margin-top:56px;border-top:1px solid var(--line)}}
+.band{padding:0 0 clamp(56px,7vw,96px)}
 .band-in{border:1px solid var(--line);background:var(--graphite);padding:clamp(26px,4vw,48px);display:flex;gap:clamp(24px,4vw,56px);align-items:center;justify-content:space-between}
 .band-in > div{max-width:660px}
 /* ---------- oferty pobierane z programu biura ---------- */
@@ -640,7 +640,7 @@ button.link{background:none;border:0;padding:0;font:inherit;color:var(--gold-l);
 }
 
 /* Kraków i okolice */
-.krakow-head{max-width:780px;margin-bottom:56px}
+.krakow-head{max-width:780px;margin-bottom:44px}
 .krakow-head h2{max-width:20ch}
 .krakow-karty{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
 .krakow-karty li{background:var(--onyx);padding:30px 28px 32px;transition:background .3s}

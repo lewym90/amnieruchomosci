@@ -714,7 +714,6 @@
       ],
       "uwaga": "Please don’t enter the land register number, your PESEL number or document scans here. We will ask for documents at the meeting.",
       "imie": "First name",
-      "kontakt": "Phone or e-mail",
       "wiadomosc": "A few words about your case (optional)",
       "zgoda": "I have read the [information on the processing of personal data](okno:rodo).",
       "dalej": "Next",
@@ -733,7 +732,10 @@
       ],
       "lokalizacja_kupno": "Location",
       "lokalizacja_kupno_przyklad": "e.g. Kraków, Dębniki",
-      "kryteria": "Criteria (floor area, number of rooms, budget, timing)"
+      "kryteria": "Criteria (floor area, number of rooms, budget, timing)",
+      "telefon": "Phone",
+      "email": "E-mail",
+      "kontakt_nota": "One of them is enough: phone or e-mail."
     }
   },
   "stopka": {
@@ -936,7 +938,6 @@
     "transakcje_rok": "{liczba} {forma} in {rok}",
     "krok": "Step {n} of 3",
     "blad_lokalizacja": "Please enter the town or district.",
-    "blad_kontakt": "Please enter a valid phone number or e-mail address.",
     "blad_zgoda": "Please confirm that you have read the information on the processing of personal data.",
     "blad_brak": "Please enter your first name and a phone number or e-mail address.",
     "blad_wysylki": "The enquiry could not be sent. Please try again or send it from your e-mail program.",
@@ -958,15 +959,18 @@
       "sytuacja": "Legal situation",
       "wiadomosc": "Message",
       "imie": "First name",
-      "kontakt": "Contact",
       "cel": "Purpose",
-      "kryteria": "Criteria"
+      "kryteria": "Criteria",
+      "telefon": "Phone",
+      "email": "E-mail"
     },
     "nie_podano": "not given",
     "zgoda_tekst": "I have read the information on the processing of personal data.",
     "wiecej_pytan": "More questions ({n})",
     "mniej_pytan": "Fewer questions",
     "pietra_od_jedynki": false,
-    "m2": "m²"
+    "m2": "m²",
+    "blad_telefon": "The phone number looks incomplete. Please check it.",
+    "blad_email": "The e-mail address doesn’t look right. Please check it."
   }
 }
