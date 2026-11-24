@@ -1,0 +1,18 @@
+{% load strona %}<section class="sec bez-gory" id="uslugi" aria-labelledby="h-uslugi">
+  <div class="wrap">
+    <div class="svc-head">
+      <div><span class="kicker">{{ t.uslugi.kicker }}</span><h2 id="h-uslugi">{{ t.uslugi.tytul|tekst:pola }}</h2></div>
+    </div>
+    <div class="svc">
+      {% for u in t.uslugi.lista %}<article class="svc-row" aria-label="{% formatuj t.uslugi.licznik n=forloop.counter m=t.uslugi.lista|length %}">
+        <span class="svc-n">{{ forloop.counter|stringformat:"02d" }} / {{ t.uslugi.lista|length|stringformat:"02d" }}</span><h3>{{ u.tytul }}<small>{{ u.podtytul|tekst:pola }}</small></h3>
+        <div>
+          {% for a in u.akapity %}<p>{{ a|tekst:pola }}</p>
+          {% endfor %}{% if u.link %}<p><a class="more" href="#{{ u.link.cel }}">{{ u.link.tekst }}</a></p>{% endif %}
+        </div>
+        <div class="meta"><div><b>{{ t.uslugi.dla_kogo }}</b>{{ u.dla_kogo|tekst:pola }}</div><div><b>{{ t.uslugi.wynagrodzenie }}</b>{{ u.wynagrodzenie|tekst:pola }}</div></div>
+      </article>
+      {% endfor %}</div>
+    <div class="svc-nav" aria-hidden="true"><div class="svc-dots">{% for u in t.uslugi.lista %}<button type="button" tabindex="-1"{% if forloop.first %} aria-current="true"{% endif %}></button>{% endfor %}</div><span class="svc-count">{% formatuj t.uslugi.licznik n=1 m=t.uslugi.lista|length %}</span></div>
+  </div>
+</section>

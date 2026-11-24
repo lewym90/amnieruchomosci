@@ -1,0 +1,28 @@
+{% load static strona %}<section class="sec report" id="raport" aria-labelledby="h-raport">
+  <div class="wrap report-grid">
+    <div>
+      <span class="kicker">{{ t.raport.kicker }}</span>
+      <h2 id="h-raport">{{ t.raport.tytul|tekst:pola }}</h2>
+      <p class="lede odstep">{{ t.raport.lede|tekst:pola }}</p>
+      <ul class="nots" aria-label="{{ t.raport.czym_nie_jest_aria }}">
+        {% for n in t.raport.czym_nie_jest %}<li>{{ n|tekst:pola }}</li>
+        {% endfor %}</ul>
+      <div class="cta-row"><a class="btn" href="#kontakt" data-tab="buy" data-raport="1">{{ t.raport.przycisk }}</a></div>
+      <figure class="photo rimg">
+        <img src="{{ obrazy.raport.src }}" srcset="{{ obrazy.raport.srcset }}" sizes="(max-width: 980px) 100vw, 560px" alt="{{ t.raport.zdjecie_alt }}" loading="lazy" decoding="async" width="{{ obrazy.raport.szerokosc }}" height="{{ obrazy.raport.wysokosc }}">
+        <figcaption>{{ t.raport.zdjecie_podpis|tekst:pola }}{% if obrazy.raport.ai %} <span class="ai-nota">{{ t.wspolne.ai_zdjecie }}</span>{% endif %}</figcaption>
+      </figure>
+    </div>
+    <div class="sheet" aria-label="{{ t.raport.arkusz_aria }}">
+      <div class="top"><img src="{% static 'strona/img/znak.webp' %}" alt="{{ w.firma.marka }}" width="63" height="40"><div>{% for l in t.raport.arkusz_naglowek %}{{ l }}{% if not forloop.last %}<br>{% endif %}{% endfor %}</div></div>
+      <h3>{{ t.raport.arkusz_tytul }}</h3>
+      <p class="sub">{{ t.raport.arkusz_podtytul|tekst:pola }}</p>
+      <ol class="toc" id="toc">
+        {% for s in t.raport.sekcje %}<li{% if forloop.counter > 5 %} class="x"{% endif %}><div><b>{{ s.tytul }}</b><span>{{ s.opis|tekst:pola }}</span></div></li>
+        {% endfor %}<li class="last x"><div><b>{{ t.raport.sekcja_zrodla.tytul }}</b><span>{{ t.raport.sekcja_zrodla.opis|tekst:pola }}</span></div></li>
+      </ol>
+      <button type="button" class="toc-more" id="tocMore" aria-expanded="false" aria-controls="toc">{{ t.raport.przycisk_wiecej }}</button>
+      <div class="clause"><p>{{ t.raport.klauzula|tekst:pola }}</p></div>
+    </div>
+  </div>
+</section>

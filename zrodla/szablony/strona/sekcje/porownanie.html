@@ -1,0 +1,32 @@
+{% load strona %}<section class="sec" id="dokumenty" aria-labelledby="h-widac">
+  <div class="wrap split-h">
+    <div>
+      <span class="kicker">{{ t.porownanie.kicker }}</span>
+      <h2 id="h-widac">{{ t.porownanie.tytul|tekst:pola }}</h2>
+      <p class="lede odstep">{{ t.porownanie.lede|tekst:pola }}</p>
+      <p class="muted">{{ t.porownanie.wskazowka|tekst:pola }}</p>
+    </div>
+    <div>
+      <div class="compare" id="compare" style="--cut:55%">
+        <div class="layer ad" aria-hidden="true">
+          <span class="tag">{{ t.porownanie.ogloszenie.etykieta }}</span>
+          <h3>{{ t.porownanie.ogloszenie.tytul|tekst:pola }}</h3>
+          <div class="price">{{ t.porownanie.ogloszenie.cena }}</div>
+          <ul>{% for c in t.porownanie.ogloszenie.cechy %}<li>{{ c }}</li>{% endfor %}</ul>
+          <p>{{ t.porownanie.ogloszenie.opis|tekst:pola }}</p>
+          <div class="rooms"><i></i><i></i><i></i></div>
+        </div>
+        <div class="layer docs" id="docs">
+          <span class="tag">{{ t.porownanie.dokumenty.etykieta }}</span>
+          <dl>
+            {% for r in t.porownanie.dokumenty.wiersze %}<div class="r"><dt>{{ r.nazwa|tekst:pola }}</dt><dd>{{ r.wartosc|tekst:pola }}</dd></div>
+            {% endfor %}</dl>
+        </div>
+        <div class="handle" aria-hidden="true"><span><svg viewBox="0 0 24 24" fill="none" stroke="#0B0B0D" stroke-width="1.8"><path d="M9 6l-5 6 5 6M15 6l5 6-5 6"/></svg></span></div>
+        <label class="sr" for="cmp">{{ t.porownanie.suwak }}</label>
+        <input type="range" id="cmp" min="4" max="96" value="55">
+      </div>
+      <p class="caption">{{ t.porownanie.podpis|tekst:pola }}</p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,970 @@
+{
+  "jezyk": "pl",
+  "meta": {
+    "tytul": "Biuro nieruchomości Kraków i okolice | AM Nieruchomości",
+    "opis": "Biuro nieruchomości w Krakowie i okolicach. Każdą nieruchomość sprawdzamy od strony prawnej i faktycznej, a wynik przekazujemy kupującemu na piśmie. Sprzedaż, najem, sprawy spadkowe i nieuregulowany stan prawny.",
+    "og_tytul": "AM Nieruchomości – sprawdzone do końca",
+    "og_opis": "Biuro nieruchomości w Krakowie i okolicach. Każdą nieruchomość sprawdzamy, zanim ktokolwiek podpisze.",
+    "lokalizacja_og": "pl_PL"
+  },
+  "wspolne": {
+    "polisa_nr": "polisa nr",
+    "zamknij": "Zamknij",
+    "ai_zdjecie": "Zdjęcie poglądowe wygenerowane z użyciem AI.",
+    "jezyk": "Wersja językowa",
+    "puste": {
+      "numer": "numer",
+      "adres": "adres",
+      "towarzystwo": "towarzystwo ubezpieczeń",
+      "stawka": "stawka",
+      "okres": "np. 12 miesięcy",
+      "telefon": "telefon",
+      "email": "e-mail"
+    },
+    "do_uzupelnienia": "do uzupełnienia"
+  },
+  "nawigacja": {
+    "przejscie": "Przejście do treści",
+    "marka_aria": "AM Nieruchomości, strona główna",
+    "menu_aria": "Menu",
+    "linki": [
+      {
+        "cel": "uslugi",
+        "tekst": "Usługi",
+        "stopka": "Usługi"
+      },
+      {
+        "cel": "raport",
+        "tekst": "Raport",
+        "stopka": "Raport Weryfikacyjny"
+      },
+      {
+        "cel": "sprawy-trudne",
+        "tekst": "Sprawy trudne",
+        "stopka": "Sprawy trudne"
+      },
+      {
+        "cel": "nieruchomosci",
+        "tekst": "Nieruchomości",
+        "stopka": "Nieruchomości"
+      },
+      {
+        "cel": "o-nas",
+        "tekst": "O nas",
+        "stopka": "O nas"
+      },
+      {
+        "cel": "formalnosci",
+        "tekst": "Formalności",
+        "stopka": "Formalności"
+      }
+    ],
+    "cta": "Umówmy rozmowę"
+  },
+  "hero": {
+    "tytul": "Sprawdzamy każdą nieruchomość, zanim ktokolwiek podpisze.",
+    "lede": "Księga wieczysta, obciążenia, stan spadkowy, zadłużenie wobec wspólnoty, zgodność metrażu z dokumentacją. Sprawdzamy to wszystko i przekazujemy kupującemu na piśmie.",
+    "przycisk_sprzedaje": "Sprzedaję nieruchomość",
+    "przycisk_kupuje": "Kupuję nieruchomość",
+    "obszar": "Kraków i okolice",
+    "lista_tytul": "Zakres weryfikacji",
+    "lista": [
+      "Księga wieczysta, działy I–IV",
+      "Obciążenia i roszczenia",
+      "Podstawa nabycia",
+      "Zadłużenie wobec wspólnoty",
+      "Metraż: dokument i pomiar",
+      "Umocowanie sprzedającego"
+    ],
+    "lista_nota": "To sześć z jedenastu sekcji raportu. Wszystkie opisujemy niżej."
+  },
+  "zasady": {
+    "aria": "Nasze zasady",
+    "lista": [
+      {
+        "tytul": "Wynagrodzenie od jednej strony.",
+        "tekst": "Reprezentujemy Państwa, a nie obie strony transakcji naraz."
+      },
+      {
+        "tytul": "Żadnej oferty bez umowy z właścicielem.",
+        "tekst": "Każda oferta, którą Państwo u nas widzą, jest prawdziwa i dostępna."
+      },
+      {
+        "tytul": "Raport przy każdej transakcji.",
+        "tekst": "Na piśmie, z datą, numerem i podpisem."
+      }
+    ]
+  },
+  "pasek": {
+    "lista": [
+      "Księga wieczysta",
+      "Hipoteka",
+      "Służebności",
+      "Stan spadkowy",
+      "Wspólnota",
+      "Media",
+      "Plan miejscowy",
+      "Ochrona konserwatorska",
+      "Ryzyko powodziowe",
+      "Pomiar kontrolny",
+      "Umocowanie sprzedającego"
+    ]
+  },
+  "porownanie": {
+    "kicker": "Po co to wszystko",
+    "tytul": "Największa decyzja finansowa w życiu. Podejmowana na podstawie kilkunastu zdjęć.",
+    "lede": "Ogłoszenie pokazuje to, co widać. Dokumenty mówią resztę: o wpisach w księdze wieczystej, uchwałach wspólnoty, różnicach w metrażu i niezamkniętych sprawach spadkowych.",
+    "wskazowka": "Wystarczy przesunąć linię na ilustracji, żeby zobaczyć, czego zwykle nie ma w ogłoszeniu.",
+    "ogloszenie": {
+      "etykieta": "Ogłoszenie",
+      "tytul": "3 pokoje, 61 m², Kraków",
+      "cena": "Cena do negocjacji",
+      "cechy": [
+        "Jasne",
+        "Balkon",
+        "Po odświeżeniu",
+        "Blisko tramwaju"
+      ],
+      "opis": "Mieszkanie gotowe do zamieszkania. Dokumenty w porządku."
+    },
+    "dokumenty": {
+      "etykieta": "Dokumenty",
+      "wiersze": [
+        {
+          "nazwa": "KW, dział III",
+          "wartosc": "==Służebność przejazdu== na rzecz działki sąsiedniej"
+        },
+        {
+          "nazwa": "KW, dział IV",
+          "wartosc": "==Wzmianka o wniosku== o wpis hipoteki"
+        },
+        {
+          "nazwa": "Wspólnota",
+          "wartosc": "Uchwała o ==kredycie na termomodernizację==, spłacanym z zaliczek"
+        },
+        {
+          "nazwa": "Metraż",
+          "wartosc": "61,0 m² w akcie, ==58,7 m² w pomiarze=="
+        },
+        {
+          "nazwa": "Podstawa nabycia",
+          "wartosc": "Spadek, ==dział spadku niezakończony=="
+        }
+      ]
+    },
+    "suwak": "Porównanie ogłoszenia z dokumentami",
+    "podpis": "Ilustracja poglądowa. Nieruchomość i wpisy są fikcyjne, zestawione z typowych sytuacji, które sprawdzamy."
+  },
+  "uslugi": {
+    "kicker": "Usługi",
+    "tytul": "Cztery usługi. Każda zaczyna się od dokumentów.",
+    "dla_kogo": "Dla kogo",
+    "wynagrodzenie": "Wynagrodzenie",
+    "licznik": "Usługa {n} z {m}",
+    "lista": [
+      {
+        "tytul": "Sprzedaż",
+        "podtytul": "Pełne pośrednictwo z Raportem Weryfikacyjnym w cenie",
+        "akapity": [
+          "Prowadzimy sprzedaż od pierwszego dokumentu do aktu notarialnego. Najpierw sprawdzamy nieruchomość. Potem przygotowujemy analizę cenową opartą na cenach transakcyjnych, dokumentację zdjęciową i wideo, publikujemy ofertę i prowadzimy prezentacje.",
+          "Co tydzień otrzymują Państwo pisemny raport: co się wydarzyło, co z tego wynika i co planujemy na kolejny tydzień."
+        ],
+        "link": null,
+        "dla_kogo": "Właściciele mieszkań, domów i działek",
+        "wynagrodzenie": "Procentowe, wyłącznie od sprzedającego, umowa na wyłączność"
+      },
+      {
+        "tytul": "Sprawy trudne",
+        "podtytul": "Spadki, lokatorzy, współwłasność, obciążenia",
+        "akapity": [
+          "Nieruchomości o nieuregulowanym stanie prawnym wymagają miesięcy pracy na dokumentach i rozmów z ludźmi w konflikcie. Zaczynamy od ustalenia stanu faktycznego i prawnego, a następnie przedstawiamy go Państwu na piśmie, zanim zapadną jakiekolwiek decyzje."
+        ],
+        "link": {
+          "cel": "sprawy-trudne",
+          "tekst": "Jak prowadzimy sprawy trudne"
+        },
+        "dla_kogo": "Spadkobiercy, współwłaściciele w sporze, właściciele nieruchomości obciążonych",
+        "wynagrodzenie": "Ryczałt za etap przygotowawczy oraz stawka procentowa przy transakcji"
+      },
+      {
+        "tytul": "Raport Weryfikacyjny",
+        "podtytul": "Dla nieruchomości kupowanej poza naszym biurem",
+        "akapity": [
+          "Znaleźli Państwo mieszkanie, a za kilka dni trzeba wpłacić zadatek. Sprawdzamy stan prawny i faktyczny nieruchomości i przekazujemy pisemny raport z datą, numerem i podpisem."
+        ],
+        "link": {
+          "cel": "raport",
+          "tekst": "Co zawiera raport"
+        },
+        "dla_kogo": "Kupujący, którzy znaleźli nieruchomość sami lub przez inne biuro",
+        "wynagrodzenie": "Stała cena za raport, niezależnie od tego, czy dojdzie do transakcji"
+      },
+      {
+        "tytul": "Najem",
+        "podtytul": "Weryfikacja najemcy, umowa, protokół",
+        "akapity": [
+          "Znajdujemy najemcę i sprawdzamy go, zanim wprowadzi się do Państwa mieszkania. Przygotowujemy umowę oraz protokół zdawczo-odbiorczy z dokumentacją fotograficzną stanu lokalu i liczników.",
+          "Właścicielom mieszkającym poza Krakowem, także za granicą, zapewniamy stałą obsługę: rozliczenia, kontakt z najemcą i reakcję na awarie."
+        ],
+        "link": null,
+        "dla_kogo": "Właściciele mieszkań na wynajem, także spoza regionu",
+        "wynagrodzenie": "Jednorazowe przy zawarciu umowy, stała obsługa w abonamencie"
+      }
+    ]
+  },
+  "raport": {
+    "kicker": "Raport Weryfikacyjny",
+    "tytul": "Dokument, który można położyć na stole i pokazać rodzinie.",
+    "lede": "Raport ma charakter analityczny: zawiera fakty ustalone na podstawie dokumentów i źródeł, ich zestawienie oraz analizę. Każde ustalenie ma wskazane źródło oraz datę i godzinę sprawdzenia. Kupujący otrzymuje raport przed podpisaniem umowy przedwstępnej, w wersji drukowanej, w teczce.",
+    "czym_nie_jest_aria": "Czym raport nie jest",
+    "czym_nie_jest": [
+      "Nie jest opinią prawną ani poradą w jakiejkolwiek dziedzinie.",
+      "Nie jest operatem szacunkowym. Wartość nieruchomości określa rzeczoznawca majątkowy.",
+      "Nie zawiera rekomendacji. Decyzja należy wyłącznie do Państwa."
+    ],
+    "przycisk": "Chcę zobaczyć przykładowy raport",
+    "zdjecie_alt": "Agata Ceglińska przy biurku analizuje rzuty mieszkania",
+    "zdjecie_podpis": "Agata Ceglińska odpowiada za weryfikację i Raporty Weryfikacyjne.",
+    "arkusz_aria": "Spis treści Raportu Weryfikacyjnego",
+    "arkusz_naglowek": [
+      "Raport Weryfikacyjny nr [numer]",
+      "stan na dzień [data, godzina]",
+      "wzór struktury dokumentu"
+    ],
+    "arkusz_tytul": "Zawartość raportu",
+    "arkusz_podtytul": "Jedenaście sekcji, wykaz źródeł i załączniki.",
+    "sekcje": [
+      {
+        "tytul": "Metryka nieruchomości",
+        "opis": "Adres, numer KW, powierzchnia z dokumentów, rok budowy, rodzaj własności, udział w gruncie"
+      },
+      {
+        "tytul": "Księga wieczysta",
+        "opis": "Wszystkie cztery działy i wzmianki, stan na dzień i godzinę, wydruk w załączniku"
+      },
+      {
+        "tytul": "Obciążenia i ograniczenia",
+        "opis": "Hipoteki, służebności, dożywocie, roszczenia, umowy najmu, egzekucje"
+      },
+      {
+        "tytul": "Podstawa nabycia i stan prawny",
+        "opis": "Sposób nabycia, a przy spadkach: dokumenty spadkowe, dział spadku, krąg spadkobierców"
+      },
+      {
+        "tytul": "Stan faktyczny a dokumentacja",
+        "opis": "Pomiar kontrolny, zgodność układu z rzutem, widoczne zmiany i stan instalacji"
+      },
+      {
+        "tytul": "Wspólnota lub spółdzielnia",
+        "opis": "Zaległości, zaliczki, fundusz remontowy, kredyt, uchwały o planowanych remontach i najmie krótkoterminowym"
+      },
+      {
+        "tytul": "Media i opłaty",
+        "opis": "Zaległości u dostawców, stan liczników, sposób ogrzewania i jego koszt"
+      },
+      {
+        "tytul": "Otoczenie i planowanie",
+        "opis": "Plan miejscowy lub warunki zabudowy, ochrona konserwatorska, ryzyko powodziowe, hałas lotniczy, wpływ wyrobisk górniczych, inwestycje w sąsiedztwie"
+      },
+      {
+        "tytul": "Strona sprzedająca",
+        "opis": "Tożsamość, umocowanie, pełnomocnictwa, zgodność danych z KW, reprezentacja spółek"
+      },
+      {
+        "tytul": "Zidentyfikowane ryzyka",
+        "opis": "Lista ponumerowana: opis ustalonych faktów i ocena ich istotności"
+      },
+      {
+        "tytul": "Podsumowanie",
+        "opis": "Zestawienie najważniejszych ustaleń raportu"
+      }
+    ],
+    "sekcja_zrodla": {
+      "tytul": "Wykaz źródeł i klauzula",
+      "opis": "Data i godzina każdego sprawdzenia, zakres odpowiedzialności, numer polisy OC, załączniki"
+    },
+    "przycisk_wiecej": "Pełny spis: 11 sekcji i wykaz źródeł",
+    "przycisk_zwin": "Zwiń spis",
+    "klauzula": "Raport sporządzono na podstawie dokumentów i informacji uzyskanych ze źródeł wskazanych w wykazie, według stanu na dzień [data]. Ustalenia dotyczą wyłącznie stanu z tego dnia. Raport ma charakter analityczny i nie stanowi opinii prawnej, porady ani operatu szacunkowego. Działalność jest objęta obowiązkowym ubezpieczeniem odpowiedzialności cywilnej pośrednika w obrocie nieruchomościami, polisa nr [numer]."
+  },
+  "krakow": {
+    "kicker": "Kraków i okolice",
+    "tytul": "Tu ogłoszenie nie powie Państwu wszystkiego.",
+    "lede": "Krakowski rynek ma swoje pułapki. Oprócz księgi wieczystej i dokumentów wspólnoty sprawdzamy sprawy, które w tym regionie potrafią zmienić wartość nieruchomości albo plany kupującego.",
+    "karty": [
+      {
+        "tytul": "Kamienice i zabytki",
+        "tekst": "Wpis do rejestru lub gminnej ewidencji zabytków, strefy ochrony konserwatorskiej i zasady Parku Kulturowego Stare Miasto. Od tego zależy, które prace wymagają zgody konserwatora i co wolno zmienić na elewacji."
+      },
+      {
+        "tytul": "Ryzyko powodziowe",
+        "tekst": "Sprawdzamy mapy zagrożenia powodziowego dla Wisły i jej dopływów: Wilgi, Prądnika, Dłubni i Serafy. Ma to znaczenie dla bezpieczeństwa i kosztu ubezpieczenia."
+      },
+      {
+        "tytul": "Lotnisko w Balicach",
+        "tekst": "Wokół lotniska Kraków-Balice obowiązuje obszar ograniczonego użytkowania. Sprawdzamy, czy nieruchomość w nim leży i co z tego wynika dla hałasu i zabudowy."
+      },
+      {
+        "tytul": "Dawne wyrobiska",
+        "tekst": "W rejonie Wieliczki i Bochni sprawdzamy, czy nieruchomość nie leży w zasięgu wpływu dawnych wyrobisk kopalń soli."
+      },
+      {
+        "tytul": "Spółdzielnie",
+        "tekst": "Spółdzielcze własnościowe prawo do lokalu często nie ma księgi wieczystej. Ustalamy stan prawny w spółdzielni i sprawdzamy, czy przed sprzedażą warto założyć księgę."
+      },
+      {
+        "tytul": "Co powstanie za oknem",
+        "tekst": "Sprawdzamy, czy dla terenu obowiązuje plan miejscowy, a jeśli nie, jakie decyzje o warunkach zabudowy wydano w sąsiedztwie."
+      }
+    ]
+  },
+  "proces": {
+    "kicker": "Jak pracujemy",
+    "tytul": "Pięć etapów, od pierwszej rozmowy do aktu notarialnego.",
+    "lede": "Na pierwszym spotkaniu niczego nie podpisujemy. Umowę zostawiamy Państwu do spokojnego przeczytania.",
+    "kroki": [
+      {
+        "tytul": "Spotkanie i oględziny",
+        "tekst": "Przyjeżdżamy, oglądamy nieruchomość, pytamy o dokumenty i słuchamy."
+      },
+      {
+        "tytul": "Weryfikacja",
+        "tekst": "Sprawdzamy stan prawny i faktyczny. Jeśli coś jest nie tak, mówimy to od razu, a nie po trzech miesiącach."
+      },
+      {
+        "tytul": "Analiza cenowa",
+        "tekst": "Zestawiamy ceny transakcyjne z aktów notarialnych dla podobnych nieruchomości w okolicy, a nie ceny z ogłoszeń. To nie jest wycena ani operat szacunkowy."
+      },
+      {
+        "tytul": "Przygotowanie i publikacja",
+        "tekst": "Sesja zdjęciowa, wideo, rzut z wymiarami i opis oparty wyłącznie na sprawdzonych faktach. Publikacja na wybranych portalach."
+      },
+      {
+        "tytul": "Prowadzenie do aktu",
+        "tekst": "Prezentacje, negocjacje, umowa przedwstępna i dokumenty dla notariusza. Co tydzień pisemny raport."
+      }
+    ],
+    "tygodniowy": {
+      "przycisk": "Wzór raportu tygodniowego",
+      "aria": "Wzór raportu tygodniowego",
+      "naglowek": "Raport tygodniowy",
+      "naglowek_dopisek": "wysyłany w każdy piątek",
+      "etykieta": "Wzór, dane przykładowe",
+      "liczby": [
+        {
+          "liczba": 412,
+          "opis": "wyświetleń oferty"
+        },
+        {
+          "liczba": 9,
+          "opis": "telefonów"
+        },
+        {
+          "liczba": 4,
+          "opis": "prezentacje"
+        },
+        {
+          "liczba": 1,
+          "opis": "propozycja cenowa"
+        }
+      ],
+      "wiersze": [
+        {
+          "nazwa": "Co mówili oglądający",
+          "wartosc": "Układ oceniany dobrze. Dwie osoby zwróciły uwagę na brak windy."
+        },
+        {
+          "nazwa": "Co z tego wynika",
+          "wartosc": "Zainteresowanie utrzymuje się na stałym poziomie. Pytania dotyczą głównie kosztów utrzymania."
+        },
+        {
+          "nazwa": "Plan na przyszły tydzień",
+          "wartosc": "Dwie prezentacje w sobotę, uzupełnienie oferty o zestawienie opłat."
+        }
+      ]
+    }
+  },
+  "sprawy": {
+    "kicker": "Sprawy trudne",
+    "tytul": "Trudne sprawy. Czyste transakcje.",
+    "lede": "Te sprawy da się doprowadzić do końca. Wymagają miesięcy pracy na dokumentach, rozmów z ludźmi w trudnej sytuacji i cierpliwości.",
+    "akapity": [
+      "Zaczynamy od ustalenia stanu faktycznego i prawnego. Przedstawiamy Państwu na piśmie, jakie czynności są do wykonania, w jakiej kolejności i ile mogą potrwać. Ten etap jest wyceniany osobno i można na nim poprzestać."
+    ],
+    "uwaga": "Tam, gdzie sprawa wymaga postępowania sądowego lub pomocy prawnej, wskazujemy, że potrzebny jest adwokat, radca prawny lub notariusz.",
+    "przycisk": "Opiszę swoją sprawę",
+    "przyklady_aria": "Przykłady spraw",
+    "przyklady": [
+      "Mieszkanie po zmarłym bez przeprowadzonego postępowania spadkowego.",
+      "Lokator, który nie chce się wyprowadzić.",
+      "Hipoteka wyższa niż wartość nieruchomości.",
+      "Współwłaściciele, którzy ze sobą nie rozmawiają.",
+      "Udział w kamienicy, której współwłaścicieli trudno ustalić."
+    ]
+  },
+  "o_nas": {
+    "kicker": "O nas",
+    "tytul": "Przez lata nie wolno nam było niczego przyjąć na słowo.",
+    "lede": "Pracowaliśmy zawodowo tam, gdzie każdy dokument trzeba było przeczytać do końca, a każdą informację potwierdzić w niezależnym źródle. Od naszej rzetelności zależały sprawy innych ludzi. Tę samą metodę pracy przenieśliśmy do obrotu nieruchomościami.",
+    "zdjecie_alt": "Michał Lewandowski i Agata Ceglińska, właściciele AM Nieruchomości",
+    "osoby": [
+      {
+        "imie": "Michał Lewandowski",
+        "rola": "Współwłaściciel",
+        "opis": "Odpowiada za pierwszy kontakt, prezentacje, negocjacje i dokumentację zdjęciową. Prowadzi rozmowy spokojnie i rzeczowo, także wtedy, gdy strony są w konflikcie."
+      },
+      {
+        "imie": "Agata Ceglińska",
+        "rola": "Współwłaścicielka",
+        "opis": "Odpowiada za weryfikację stanu prawnego i faktycznego, Raporty Weryfikacyjne i umowy. Przez lata szkoliła innych i przygotowywała dokumenty, które musiały być kompletne i precyzyjne."
+      }
+    ],
+    "czego_nie_robimy_aria": "Czego nie robimy",
+    "czego_nie_robimy": [
+      {
+        "tytul": "Nie obiecujemy ceny ani terminu.",
+        "tekst": "Przedstawiamy analizę opartą na cenach transakcyjnych i mówimy, co z niej wynika, także wtedy, gdy nie jest to dobra wiadomość."
+      },
+      {
+        "tytul": "Nie bierzemy wynagrodzenia od obu stron.",
+        "tekst": "Reprezentujemy jedną stronę i ta strona wie o tym od początku."
+      },
+      {
+        "tytul": "Nie publikujemy ofert bez umowy.",
+        "tekst": "Żadnych cudzych ogłoszeń ani nieruchomości, których nie sprawdziliśmy."
+      },
+      {
+        "tytul": "Nie przyjmujemy spraw, których nie da się dokończyć.",
+        "tekst": "Jeśli odmówimy, powiemy, dlaczego i co trzeba zrobić najpierw."
+      }
+    ]
+  },
+  "motto": {
+    "aria": "Hasło",
+    "tekst": "Sprawdzone do końca.",
+    "podpis": "Sprawdzone przed podpisaniem umowy i prowadzone aż do aktu notarialnego."
+  },
+  "obszar": {
+    "kicker": "Obszar działania",
+    "tytul": "Kraków i cztery powiaty wokół niego.",
+    "lede": "Pracujemy bez stacjonarnego biura: spotykamy się w nieruchomości, u Państwa albo w umówionym miejscu. Dzięki temu dojeżdżamy tam, gdzie jest sprawa.",
+    "grupy": [
+      {
+        "nazwa": "Kraków",
+        "miejsca": [
+          "Stare Miasto",
+          "Grzegórzki",
+          "Prądnik Czerwony",
+          "Prądnik Biały",
+          "Krowodrza",
+          "Bronowice",
+          "Zwierzyniec",
+          "Dębniki",
+          "Łagiewniki-Borek Fałęcki",
+          "Swoszowice",
+          "Podgórze Duchackie",
+          "Bieżanów-Prokocim",
+          "Podgórze",
+          "Czyżyny",
+          "Mistrzejowice",
+          "Bieńczyce",
+          "Wzgórza Krzesławickie",
+          "Nowa Huta"
+        ]
+      },
+      {
+        "nazwa": "Powiat krakowski",
+        "miejsca": [
+          "Zabierzów",
+          "Zielonki",
+          "Michałowice",
+          "Wielka Wieś",
+          "Liszki",
+          "Czernichów",
+          "Skawina",
+          "Mogilany",
+          "Świątniki Górne",
+          "Kocmyrzów-Luborzyca",
+          "Igołomia-Wawrzeńczyce",
+          "Krzeszowice",
+          "Jerzmanowice-Przeginia",
+          "Iwanowice",
+          "Skała",
+          "Słomniki",
+          "Sułoszowa"
+        ]
+      },
+      {
+        "nazwa": "Powiat wielicki",
+        "miejsca": [
+          "Wieliczka",
+          "Niepołomice",
+          "Biskupice",
+          "Gdów",
+          "Kłaj"
+        ]
+      },
+      {
+        "nazwa": "Powiat myślenicki",
+        "miejsca": [
+          "Myślenice",
+          "Dobczyce",
+          "Siepraw",
+          "Sułkowice",
+          "Pcim",
+          "Lubień",
+          "Raciechowice",
+          "Tokarnia",
+          "Wiśniowa"
+        ]
+      },
+      {
+        "nazwa": "Powiat bocheński",
+        "miejsca": [
+          "Bochnia",
+          "Nowy Wiśnicz",
+          "Lipnica Murowana",
+          "Łapanów",
+          "Rzezawa",
+          "Drwinia",
+          "Trzciana"
+        ]
+      }
+    ],
+    "nota": "Poza tym obszarem przyjmujemy sprawy po indywidualnym uzgodnieniu, zwłaszcza Raporty Weryfikacyjne i sprawy trudne."
+  },
+  "faq": {
+    "kicker": "Formalności",
+    "tytul": "Zasady, przepisy i odpowiedzi na częste pytania.",
+    "lede": "Działamy w granicach przepisów o gospodarce nieruchomościami, ochronie danych osobowych, prawach konsumenta oraz przeciwdziałaniu praniu pieniędzy i finansowaniu terroryzmu.",
+    "widoczne": 5,
+    "wiecej": "Więcej pytań ({n})",
+    "pytania": [
+      {
+        "pytanie": "Ile kosztuje współpraca?",
+        "odpowiedz": [
+          "Stawka jest jedna i jawna: [[stawka]]. Przy sprzedaży wynagrodzenie płaci wyłącznie sprzedający, po zawarciu umowy sprzedaży w formie aktu notarialnego. Wynagrodzenie przyjmujemy wyłącznie przelewem na rachunek bankowy. Przy sprawach trudnych etap przygotowawczy jest wyceniany osobno. Raport Weryfikacyjny dla kupującego ma stałą cenę."
+        ]
+      },
+      {
+        "pytanie": "Czy Raport Weryfikacyjny jest poradą lub opinią prawną?",
+        "odpowiedz": [
+          "Nie. Raport jest dokumentem analitycznym: przedstawia fakty ustalone na podstawie dokumentów i wskazanych źródeł, ich zestawienie oraz analizę. Nie jest opinią prawną, poradą w jakiejkolwiek dziedzinie ani operatem szacunkowym i nie zawiera rekomendacji. W sprawach wymagających pomocy prawnej właściwy jest adwokat, radca prawny lub notariusz."
+        ]
+      },
+      {
+        "pytanie": "Czy są Państwo ubezpieczeni?",
+        "odpowiedz": [
+          "Tak. Pośrednik w obrocie nieruchomościami ma obowiązek posiadania ubezpieczenia odpowiedzialności cywilnej za szkody wyrządzone w związku z wykonywaniem czynności pośrednictwa. Każde z nas ma własną polisę. Ich numery podajemy na stronie, w umowie i w każdym raporcie: [[polisy]]."
+        ]
+      },
+      {
+        "pytanie": "Dlaczego potrzebny jest dokument tożsamości?",
+        "odpowiedz": [
+          "Pośrednik w obrocie nieruchomościami jest instytucją obowiązaną w rozumieniu ustawy o przeciwdziałaniu praniu pieniędzy oraz finansowaniu terroryzmu. Przed nawiązaniem współpracy musimy stosować środki bezpieczeństwa finansowego, w tym zidentyfikować klienta i zweryfikować jego tożsamość, a w określonych przypadkach ustalić beneficjenta rzeczywistego. Jeśli zastosowanie tych środków nie jest możliwe, przepisy nie pozwalają nam nawiązać współpracy.",
+          "[Więcej o procedurze AML](okno:aml)"
+        ]
+      },
+      {
+        "pytanie": "W jakiej formie zawierana jest umowa pośrednictwa?",
+        "odpowiedz": [
+          "Umowa pośrednictwa wymaga formy pisemnej lub elektronicznej pod rygorem nieważności. Określa zakres czynności, wynagrodzenie i sposób jego ustalenia. Umowy nie podpisujemy na pierwszym spotkaniu."
+        ]
+      },
+      {
+        "pytanie": "Czy można odstąpić od umowy?",
+        "odpowiedz": [
+          "Tak, jeśli są Państwo konsumentami. Nie mamy stacjonarnego biura, więc umowy zawieramy poza lokalem przedsiębiorstwa lub na odległość. Przysługuje wtedy Państwu prawo odstąpienia od umowy w terminie 14 dni bez podawania przyczyny, na zasadach ustawy o prawach konsumenta. Informację o tym prawie oraz wzór formularza odstąpienia otrzymują Państwo razem z umową.",
+          "Jeśli chcą Państwo, żebyśmy rozpoczęli pracę przed upływem tego terminu, poprosimy o wyraźne żądanie na piśmie."
+        ]
+      },
+      {
+        "pytanie": "Czym analiza cenowa różni się od wyceny?",
+        "odpowiedz": [
+          "Analiza cenowa to zestawienie cen transakcyjnych podobnych nieruchomości w okolicy, oparte na cenach z aktów notarialnych, a nie z ogłoszeń. Nie jest wyceną. Określanie wartości nieruchomości w formie operatu szacunkowego należy do rzeczoznawcy majątkowego."
+        ]
+      },
+      {
+        "pytanie": "Dlaczego umowa na wyłączność?",
+        "odpowiedz": [
+          "Przed publikacją oferty przeprowadzamy weryfikację, organizujemy sesję zdjęciową i przygotowujemy kampanię. Bez wyłączności nie możemy zrobić tego rzetelnie. Okres umowy i warunki jej wypowiedzenia są zapisane w umowie, którą otrzymują Państwo do przeczytania przed podpisaniem."
+        ]
+      },
+      {
+        "pytanie": "Na jakim obszarze działa biuro?",
+        "odpowiedz": [
+          "W Krakowie oraz w powiatach krakowskim, wielickim, myślenickim i bocheńskim. Pełną listę gmin podajemy w części [Obszar działania](#obszar)."
+        ]
+      },
+      {
+        "pytanie": "Czy można sprzedać lub wynająć nieruchomość, mieszkając za granicą?",
+        "odpowiedz": [
+          "Tak. Sprzedaż i najem możemy prowadzić na odległość: dokumenty przygotowujemy z wyprzedzeniem, a o postępach informujemy w cotygodniowym raporcie. Umowę sprzedaży w formie aktu notarialnego może w Państwa imieniu podpisać pełnomocnik."
+        ]
+      },
+      {
+        "pytanie": "Jak przetwarzane są moje dane?",
+        "odpowiedz": [
+          "Wyłącznie w niezbędnym zakresie i tylko w celu, w jakim zostały nam przekazane. Szczegóły, w tym Państwa prawa, opisujemy w [informacji o przetwarzaniu danych osobowych](okno:rodo)."
+        ]
+      }
+    ]
+  },
+  "oferty": {
+    "etykieta": "Nieruchomości",
+    "tytul_pusty": "Pierwsze nieruchomości są w trakcie weryfikacji.",
+    "opis_pusty": "Oferta pojawia się tutaj dopiero po podpisaniu umowy z właścicielem i zakończeniu weryfikacji. Szukają Państwo nieruchomości? Wystarczy zostawić kryteria, a odezwiemy się, gdy pojawi się pasująca.",
+    "tytul_aktualne": "Aktualne oferty",
+    "opis_aktualne": "Każda z nich ma podpisaną umowę z właścicielem i przeszła naszą weryfikację. Nic nie pasuje? Wystarczy zostawić kryteria, a odezwiemy się, gdy pojawi się odpowiednia oferta.",
+    "przycisk": "Podam kryteria poszukiwań"
+  },
+  "kontakt": {
+    "kicker": "Kontakt",
+    "tytul": "Zacznijmy od rozmowy.",
+    "lede": "Wystarczy krótko opisać sytuację. Oddzwonimy lub odpiszemy i umówimy spotkanie. Pierwsza rozmowa do niczego nie zobowiązuje.",
+    "przycisk_telefon": "Telefon",
+    "przycisk_email": "E-mail",
+    "etykiety": {
+      "telefon": "Telefon",
+      "email": "E-mail",
+      "adres": "Adres korespondencyjny",
+      "obszar": "Obszar działania",
+      "spotkania": "Spotkania"
+    },
+    "obszar": "Kraków i okolice",
+    "spotkania": "Po wcześniejszym umówieniu: w nieruchomości, u Państwa lub w dogodnym miejscu",
+    "formularz": {
+      "zakladki_aria": "Rodzaj zapytania",
+      "zakladka_sprzedaz": "Sprzedaję lub wynajmuję",
+      "zakladka_kupno": "Kupuję",
+      "krok": "Krok {n} z 3",
+      "krok1": "Krok 1: czego dotyczy sprawa",
+      "krok2": "Krok 2: nieruchomość",
+      "krok3": "Krok 3: kontakt",
+      "sprawa": "Czego dotyczy sprawa",
+      "sprawy": [
+        {
+          "wartosc": "sprzedaz",
+          "tekst": "Sprzedaż"
+        },
+        {
+          "wartosc": "najem",
+          "tekst": "Najem"
+        },
+        {
+          "wartosc": "sprawa_trudna",
+          "tekst": "Sprawa trudna"
+        }
+      ],
+      "rodzaj": "Rodzaj nieruchomości",
+      "rodzaje": [
+        {
+          "wartosc": "mieszkanie",
+          "tekst": "Mieszkanie"
+        },
+        {
+          "wartosc": "dom",
+          "tekst": "Dom"
+        },
+        {
+          "wartosc": "dzialka",
+          "tekst": "Działka"
+        },
+        {
+          "wartosc": "lokal_uzytkowy",
+          "tekst": "Lokal użytkowy"
+        }
+      ],
+      "lokalizacja": "Miejscowość lub dzielnica",
+      "lokalizacja_przyklad": "np. Kraków, Prądnik Biały",
+      "metraz": "Powierzchnia (m², orientacyjnie)",
+      "metraz_przyklad": "np. 54",
+      "sytuacja": "Sytuacja prawna",
+      "sytuacje": [
+        {
+          "wartosc": "uregulowana",
+          "tekst": "Uregulowana, jeden właściciel"
+        },
+        {
+          "wartosc": "wspolwlasnosc",
+          "tekst": "Kilku współwłaścicieli"
+        },
+        {
+          "wartosc": "spadek",
+          "tekst": "Spadek, postępowanie niezakończone"
+        },
+        {
+          "wartosc": "lokator",
+          "tekst": "W lokalu mieszka lokator"
+        },
+        {
+          "wartosc": "hipoteka",
+          "tekst": "Obciążenie hipoteczne"
+        },
+        {
+          "wartosc": "nie_wiem",
+          "tekst": "Nie wiem"
+        }
+      ],
+      "uwaga": "Prosimy nie podawać tu numeru księgi wieczystej, numeru PESEL ani skanów dokumentów. O dokumenty poprosimy podczas spotkania.",
+      "imie": "Imię",
+      "kontakt": "Telefon lub e-mail",
+      "wiadomosc": "Kilka słów o sprawie (opcjonalnie)",
+      "zgoda": "Zapoznałem(-am) się z [informacją o przetwarzaniu danych osobowych](okno:rodo).",
+      "dalej": "Dalej",
+      "wstecz": "Wstecz",
+      "wyslij": "Wysyłam zapytanie",
+      "cel": "Czego Państwo potrzebują",
+      "cele": [
+        {
+          "wartosc": "szukam",
+          "tekst": "Szukam nieruchomości"
+        },
+        {
+          "wartosc": "raport",
+          "tekst": "Raport dla znalezionej nieruchomości"
+        }
+      ],
+      "lokalizacja_kupno": "Lokalizacja",
+      "lokalizacja_kupno_przyklad": "np. Kraków, Dębniki",
+      "kryteria": "Kryteria (metraż, liczba pokoi, budżet, termin)"
+    }
+  },
+  "stopka": {
+    "opis": "Biuro nieruchomości w Krakowie i okolicach. Każdą nieruchomość sprawdzamy od strony prawnej i faktycznej, a wynik przekazujemy kupującemu na piśmie.",
+    "haslo": "Sprawdzone do końca.",
+    "kontakt": "Kontakt",
+    "prawne": {
+      "rodo": "Polityka prywatności",
+      "aml": "Przeciwdziałanie praniu pieniędzy",
+      "cookies": "Pliki cookies",
+      "nota": "Nota prawna"
+    },
+    "firma": "[[nazwa_pelna]], [[adres]], NIP [[nip]], REGON [[regon]].",
+    "oc": "Obowiązkowe ubezpieczenie OC pośrednika w obrocie nieruchomościami: [[polisy]].",
+    "prawa": "© [[rok]] AM Nieruchomości. Treści na stronie mają charakter informacyjny i nie stanowią oferty w rozumieniu art. 66 Kodeksu cywilnego ani porady."
+  },
+  "okna": {
+    "rodo": {
+      "tytul": "Informacja o przetwarzaniu danych osobowych",
+      "tresc": [
+        {
+          "akapit": "Zgodnie z art. 13 rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 (RODO) informujemy:"
+        },
+        {
+          "naglowek": "Administratorzy"
+        },
+        {
+          "akapit": "Administratorami danych są wspólnicy spółki cywilnej [[nazwa_pelna]], [[adres]], NIP [[nip]]. Kontakt w sprawach danych osobowych: [[email]], [[telefon]]."
+        },
+        {
+          "naglowek": "Cele i podstawy przetwarzania"
+        },
+        {
+          "lista": [
+            "Odpowiedź na zapytanie i kontakt przed zawarciem umowy, na Państwa żądanie: art. 6 ust. 1 lit. b RODO.",
+            "Zawarcie i wykonanie umowy pośrednictwa lub umowy o sporządzenie Raportu Weryfikacyjnego: art. 6 ust. 1 lit. b RODO.",
+            "Wypełnienie obowiązków prawnych, w szczególności wynikających z ustawy o przeciwdziałaniu praniu pieniędzy oraz finansowaniu terroryzmu, przepisów podatkowych i rachunkowych: art. 6 ust. 1 lit. c RODO.",
+            "Ustalenie, dochodzenie lub obrona roszczeń: art. 6 ust. 1 lit. f RODO, w związku z naszym prawnie uzasadnionym interesem."
+          ]
+        },
+        {
+          "naglowek": "Okres przechowywania"
+        },
+        {
+          "akapit": "Dane z zapytań, które nie doprowadziły do zawarcia umowy, przechowujemy nie dłużej niż [[okres_przechowywania_zapytan]]. Dane związane z umową przechowujemy przez okres jej wykonywania, a następnie do upływu terminów przedawnienia roszczeń oraz okresów wymaganych przepisami podatkowymi. Dokumentację gromadzoną w ramach środków bezpieczeństwa finansowego przechowujemy przez 5 lat, licząc od pierwszego dnia roku następującego po roku, w którym zakończono stosunki gospodarcze lub przeprowadzono transakcję okazjonalną, zgodnie z ustawą o przeciwdziałaniu praniu pieniędzy oraz finansowaniu terroryzmu."
+        },
+        {
+          "naglowek": "Odbiorcy danych"
+        },
+        {
+          "akapit": "Dane mogą być przekazywane podmiotom, które świadczą na naszą rzecz usługi na podstawie umów powierzenia (hosting, poczta elektroniczna, obsługa księgowa, systemy informatyczne), a także podmiotom uprawnionym na podstawie przepisów prawa, w tym Generalnemu Inspektorowi Informacji Finansowej. Przy realizacji transakcji dane przekazujemy notariuszowi w niezbędnym zakresie. [[poza_eog]]"
+        },
+        {
+          "naglowek": "Państwa prawa"
+        },
+        {
+          "akapit": "Przysługuje Państwu prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia danych oraz wniesienia sprzeciwu wobec przetwarzania opartego na art. 6 ust. 1 lit. f RODO. Przysługuje Państwu również prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych (ul. Stawki 2, 00-193 Warszawa)."
+        },
+        {
+          "naglowek": "Dobrowolność"
+        },
+        {
+          "akapit": "Podanie danych w formularzu jest dobrowolne, ale niezbędne, żebyśmy mogli odpowiedzieć. Podanie danych wymaganych przepisami o przeciwdziałaniu praniu pieniędzy jest warunkiem zawarcia umowy. Nie podejmujemy decyzji w sposób zautomatyzowany i nie profilujemy."
+        },
+        {
+          "naglowek": "Formularze na stronie"
+        },
+        {
+          "akapit": "[[formularz_dane]]"
+        }
+      ],
+      "formularz_program": "Dane z formularza trafiają bezpośrednio do programu, w którym prowadzimy sprawy biura, i są tam przechowywane przez okres wskazany wyżej.",
+      "formularz_poczta": "Formularz nie zapisuje danych na serwerze strony. Po wypełnieniu przygotowuje wiadomość e-mail, którą wysyłają Państwo samodzielnie z własnego programu pocztowego.",
+      "poza_eog": "Jeżeli którykolwiek dostawca przetwarza dane poza Europejskim Obszarem Gospodarczym, należy to tu wskazać wraz z podstawą przekazania."
+    },
+    "aml": {
+      "tytul": "Przeciwdziałanie praniu pieniędzy",
+      "tresc": [
+        {
+          "akapit": "Prowadząc działalność w zakresie pośrednictwa w obrocie nieruchomościami, jesteśmy instytucją obowiązaną w rozumieniu ustawy z dnia 1 marca 2018 r. o przeciwdziałaniu praniu pieniędzy oraz finansowaniu terroryzmu. Oznacza to obowiązki, które dotyczą każdego klienta, niezależnie od wartości transakcji."
+        },
+        {
+          "naglowek": "Co to oznacza w praktyce"
+        },
+        {
+          "lista": [
+            "Identyfikujemy klienta i weryfikujemy jego tożsamość na podstawie dokumentu tożsamości.",
+            "W przypadku osób prawnych i innych podmiotów ustalamy osoby uprawnione do reprezentacji oraz beneficjenta rzeczywistego.",
+            "Oceniamy stosunki gospodarcze i, w uzasadnionych przypadkach, ustalamy cel i charakter transakcji oraz źródło pochodzenia środków.",
+            "Ustalamy, czy klient jest osobą zajmującą eksponowane stanowisko polityczne.",
+            "Na bieżąco monitorujemy stosunki gospodarcze."
+          ]
+        },
+        {
+          "naglowek": "Czego nie możemy zrobić"
+        },
+        {
+          "akapit": "Jeżeli zastosowanie środków bezpieczeństwa finansowego nie jest możliwe, przepisy nie pozwalają nam nawiązać współpracy ani przeprowadzić transakcji. Nie możemy też informować klientów o przekazaniu informacji do Generalnego Inspektora Informacji Finansowej."
+        },
+        {
+          "naglowek": "Przechowywanie dokumentów"
+        },
+        {
+          "akapit": "Kopie dokumentów i informacje uzyskane w ramach tych środków przechowujemy przez okres wskazany w ustawie. Szczegóły dotyczące danych osobowych opisujemy w [informacji o przetwarzaniu danych osobowych](okno:rodo)."
+        }
+      ]
+    },
+    "cookies": {
+      "tytul": "Pliki cookies",
+      "tresc": [
+        {
+          "akapit": "Ta strona nie używa plików cookies, narzędzi analitycznych ani pikseli reklamowych."
+        },
+        {
+          "akapit": "W pamięci przeglądarki strona zapisuje tylko informacje techniczne: że animacja powitalna została już pokazana w tej karcie (do jej zamknięcia) oraz kopię strony, która pozwala ją otworzyć bez połączenia z internetem. Nie służą one do rozpoznawania ani śledzenia odwiedzających."
+        },
+        {
+          "akapit": "Czcionki i zdjęcia strony są pobierane z jej własnego serwera. Lista ofert i zdjęcia ofert są pobierane z serwera programu naszego biura. Link „Okolica na mapie” otwiera serwis OpenStreetMap dopiero po kliknięciu."
+        },
+        {
+          "akapit": "Jeżeli w przyszłości uruchomimy narzędzia analityczne lub reklamowe, zapytamy o zgodę przed ich użyciem i zaktualizujemy tę informację."
+        }
+      ]
+    },
+    "nota": {
+      "tytul": "Nota prawna",
+      "tresc": [
+        {
+          "akapit": "Treści zamieszczone na stronie mają charakter wyłącznie informacyjny. Nie stanowią oferty w rozumieniu przepisów Kodeksu cywilnego, porady prawnej, podatkowej, finansowej ani żadnej innej porady."
+        },
+        {
+          "akapit": "Raport Weryfikacyjny jest dokumentem analitycznym zawierającym fakty, ich zestawienie i analizę. Nie jest opinią prawną ani operatem szacunkowym i nie zawiera rekomendacji."
+        },
+        {
+          "akapit": "Analiza cenowa jest zestawieniem cen transakcyjnych i nie stanowi wyceny nieruchomości w rozumieniu przepisów o gospodarce nieruchomościami."
+        },
+        {
+          "akapit": "Ilustracje na stronie mają charakter poglądowy. Zdjęcia wygenerowane z użyciem AI są oznaczone w podpisie."
+        },
+        {
+          "akapit": "Strona jest dostępna również po angielsku i ukraińsku. W razie rozbieżności rozstrzyga wersja polska."
+        }
+      ]
+    }
+  },
+  "js": {
+    "suwak_wartosc": "Dokumenty odsłonięte w {p}%",
+    "oferta": "Oferta",
+    "zdjecie": "zdjęcie {n}",
+    "ai_oferta": "Część zdjęć zmodyfikowano z użyciem AI. Opis zmian znajduje się w treści ogłoszenia.",
+    "etykiety": {
+      "rodzaj": "Rodzaj",
+      "okolica": "Okolica",
+      "powierzchnia": "Powierzchnia",
+      "pokoje": "Pokoje",
+      "pietro": "Piętro",
+      "rok": "Rok budowy",
+      "dzialka": "Działka",
+      "rynek": "Rynek",
+      "numer": "Numer oferty",
+      "oplaty": "Opłaty dodatkowe"
+    },
+    "parter": "parter",
+    "pietro": "piętro {n}",
+    "z_pieter": "{n} z {m}",
+    "miesiecznie": "zł / mies.",
+    "zl": "zł",
+    "zl_m2": "zł/m²",
+    "mapa": "Okolica na mapie",
+    "mapa_nota": "Lokalizacja jest przybliżona. Dokładny adres podajemy przy umawianiu oglądania.",
+    "opis_po_polsku": "",
+    "zapytaj": "Pytam o tę ofertę",
+    "zapytanie_oferta": "Pytam o ofertę {numer}: {tytul}.",
+    "udostepnij": "Udostępnij",
+    "skopiowano": "Link skopiowany",
+    "typy": {
+      "mieszkanie": "Mieszkanie",
+      "dom": "Dom",
+      "dzialka": "Działka",
+      "lokal_uzytkowy": "Lokal użytkowy",
+      "garaz": "Garaż",
+      "inne": "Nieruchomość"
+    },
+    "tryby": {
+      "sprzedaz": "sprzedaż",
+      "najem": "najem"
+    },
+    "rynki": {
+      "pierwotny": "Pierwotny",
+      "wtorny": "Wtórny"
+    },
+    "pokoje": {
+      "one": "pokój",
+      "few": "pokoje",
+      "many": "pokoi",
+      "other": "pokoju"
+    },
+    "transakcje": {
+      "one": "transakcja doprowadzona do końca",
+      "few": "transakcje doprowadzone do końca",
+      "many": "transakcji doprowadzonych do końca",
+      "other": "transakcji doprowadzonych do końca"
+    },
+    "transakcje_rok": "{liczba} {forma} w {rok} r.",
+    "krok": "Krok {n} z 3",
+    "blad_lokalizacja": "Prosimy podać miejscowość lub dzielnicę.",
+    "blad_kontakt": "Prosimy podać poprawny numer telefonu lub adres e-mail.",
+    "blad_zgoda": "Prosimy potwierdzić zapoznanie się z informacją o przetwarzaniu danych osobowych.",
+    "blad_brak": "Prosimy uzupełnić imię oraz telefon lub e-mail.",
+    "blad_wysylki": "Nie udało się wysłać zapytania. Można spróbować ponownie albo wysłać je z programu pocztowego.",
+    "wysylanie": "Wysyłanie…",
+    "wyslane_tytul": "Dziękujemy. Zapytanie dotarło.",
+    "wyslane_tekst": "Odpowiemy w ciągu jednego dnia roboczego.",
+    "poczta_tytul": "Zapytanie jest gotowe do wysłania.",
+    "poczta_tekst": "Wystarczy otworzyć je w programie pocztowym i wysłać. Odpowiemy w ciągu jednego dnia roboczego.",
+    "poczta_przycisk": "Otwieram program pocztowy",
+    "podglad_tytul": "Podgląd zapytania",
+    "podglad_tekst": "Formularz nie jest jeszcze podłączony do programu biura. Tak wyglądałoby wysłane zapytanie:",
+    "nowe": "Nowe zapytanie",
+    "temat": "Zapytanie ze strony: {opis}",
+    "pola": {
+      "sprawa": "Rodzaj sprawy",
+      "rodzaj": "Nieruchomość",
+      "lokalizacja": "Lokalizacja",
+      "metraz": "Powierzchnia",
+      "sytuacja": "Sytuacja prawna",
+      "wiadomosc": "Wiadomość",
+      "imie": "Imię",
+      "kontakt": "Kontakt",
+      "cel": "Cel",
+      "kryteria": "Kryteria"
+    },
+    "nie_podano": "nie podano",
+    "zgoda_tekst": "Zapoznałem(-am) się z informacją o przetwarzaniu danych osobowych.",
+    "wiecej_pytan": "Więcej pytań ({n})",
+    "mniej_pytan": "Mniej pytań",
+    "pietra_od_jedynki": false,
+    "m2": "m²"
+  }
+}

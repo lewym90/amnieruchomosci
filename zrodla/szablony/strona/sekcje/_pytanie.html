@@ -1,0 +1,1 @@
+{% load strona %}<details><summary>{{ p.pytanie|tekst:pola }}</summary><div class="a">{% for a in p.odpowiedz %}<p>{{ a|tekst:pola }}</p>{% endfor %}</div></details>

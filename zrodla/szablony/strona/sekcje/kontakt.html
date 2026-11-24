@@ -1,0 +1,96 @@
+{% load strona %}{% with f=t.kontakt.formularz %}<section class="sec report" id="kontakt" aria-labelledby="h-kontakt">
+  <div class="wrap contact">
+    <div>
+      <span class="kicker">{{ t.kontakt.kicker }}</span>
+      <h2 id="h-kontakt">{{ t.kontakt.tytul|tekst:pola }}</h2>
+      <p class="lede odstep">{{ t.kontakt.lede|tekst:pola }}</p>
+      {% if w.firma.telefon or w.firma.email %}<div class="quick">{% if w.firma.telefon %}<a class="btn" href="tel:{{ w.firma.telefon|tel }}">{{ t.kontakt.przycisk_telefon }}</a>{% endif %}{% if w.firma.email %}<a class="btn ghost" href="mailto:{{ w.firma.email }}">{{ t.kontakt.przycisk_email }}</a>{% endif %}</div>{% endif %}
+      <div class="cdata">
+        <div><span>{{ t.kontakt.etykiety.telefon }}</span>{% if w.firma.telefon %}<a href="tel:{{ w.firma.telefon|tel }}">{{ w.firma.telefon }}</a>{% else %}<b>{{ pola.telefon }}</b>{% endif %}</div>
+        <div><span>{{ t.kontakt.etykiety.email }}</span>{% if w.firma.email %}<a href="mailto:{{ w.firma.email }}">{{ w.firma.email }}</a>{% else %}<b>{{ pola.email }}</b>{% endif %}</div>
+        <div><span>{{ t.kontakt.etykiety.adres }}</span><b>{{ pola.adres }}</b></div>
+        <div><span>{{ t.kontakt.etykiety.obszar }}</span><b><a href="#obszar">{{ t.kontakt.obszar }}</a></b></div>
+        <div><span>{{ t.kontakt.etykiety.spotkania }}</span><b>{{ t.kontakt.spotkania|tekst:pola }}</b></div>
+      </div>
+    </div>
+
+    <div class="formcard">
+      <div class="tabs" role="tablist" aria-label="{{ f.zakladki_aria }}">
+        <button type="button" role="tab" id="t-sell" aria-selected="true" aria-controls="p-sell">{{ f.zakladka_sprzedaz }}</button>
+        <button type="button" role="tab" id="t-buy" aria-selected="false" aria-controls="p-buy" tabindex="-1">{{ f.zakladka_kupno }}</button>
+      </div>
+
+      <div role="tabpanel" id="p-sell" aria-labelledby="t-sell">
+        <form id="f-sell" novalidate>
+          <div class="stepper" aria-hidden="true"><i class="done"></i><i></i><i></i></div>
+          <p class="sr" aria-live="polite" id="sell-live">{% formatuj f.krok n=1 %}</p>
+          <fieldset class="fstep cur" data-step="1">
+            <legend class="sr">{{ f.krok1 }}</legend>
+            <span class="field"><span>{{ f.sprawa }}</span></span>
+            <div class="chips" role="radiogroup" aria-label="{{ f.sprawa }}">
+              {% for o in f.sprawy %}<label><input type="radio" name="sprawa" value="{{ o.wartosc }}"{% if forloop.first %} checked{% endif %}><span>{{ o.tekst }}</span></label>
+              {% endfor %}</div>
+            <span class="field"><span>{{ f.rodzaj }}</span></span>
+            <div class="chips" role="radiogroup" aria-label="{{ f.rodzaj }}">
+              {% for o in f.rodzaje %}<label><input type="radio" name="rodzaj" value="{{ o.wartosc }}"{% if forloop.first %} checked{% endif %}><span>{{ o.tekst }}</span></label>
+              {% endfor %}</div>
+            <div class="fnav"><span></span><button class="btn" type="button" data-next>{{ f.dalej }}</button></div>
+          </fieldset>
+
+          <fieldset class="fstep" data-step="2">
+            <legend class="sr">{{ f.krok2 }}</legend>
+            <div class="grid2">
+              <label class="field"><span>{{ f.lokalizacja }}</span><input name="lokalizacja" required autocomplete="off" maxlength="160" placeholder="{{ f.lokalizacja_przyklad }}"></label>
+              <label class="field"><span>{{ f.metraz }}</span><input name="metraz" inputmode="decimal" maxlength="12" placeholder="{{ f.metraz_przyklad }}"></label>
+            </div>
+            <label class="field"><span>{{ f.sytuacja }}</span>
+              <select name="sytuacja">
+                {% for o in f.sytuacje %}<option value="{{ o.wartosc }}">{{ o.tekst }}</option>
+                {% endfor %}</select>
+            </label>
+            <p class="hint">{{ f.uwaga|tekst:pola }}</p>
+            <p class="err" id="e2" role="alert"></p>
+            <div class="fnav"><button class="btn ghost" type="button" data-prev>{{ f.wstecz }}</button><button class="btn" type="button" data-next>{{ f.dalej }}</button></div>
+          </fieldset>
+
+          <fieldset class="fstep" data-step="3">
+            <legend class="sr">{{ f.krok3 }}</legend>
+            <div class="grid2">
+              <label class="field"><span>{{ f.imie }}</span><input name="imie" required autocomplete="given-name" maxlength="80"></label>
+              <label class="field"><span>{{ f.kontakt }}</span><input name="kontakt" required autocomplete="on" maxlength="120"></label>
+            </div>
+            <label class="field"><span>{{ f.wiadomosc }}</span><textarea name="wiadomosc" maxlength="1200"></textarea></label>
+            <label class="hp" aria-hidden="true">Strona www<input name="strona_www" tabindex="-1" autocomplete="off"></label>
+            <label class="consent"><input type="checkbox" name="zgoda" required><span>{{ f.zgoda|tekst:pola }}</span></label>
+            <p class="err" id="e3" role="alert"></p>
+            <div class="fnav"><button class="btn ghost" type="button" data-prev>{{ f.wstecz }}</button><button class="btn" type="submit">{{ f.wyslij }}</button></div>
+          </fieldset>
+        </form>
+        <div class="done-box" id="d-sell" tabindex="-1"></div>
+      </div>
+
+      <div role="tabpanel" id="p-buy" aria-labelledby="t-buy" hidden>
+        <form id="f-buy" novalidate>
+          <span class="field"><span>{{ f.cel }}</span></span>
+          <div class="chips" role="radiogroup" aria-label="{{ f.cel }}">
+            {% for o in f.cele %}<label><input type="radio" name="cel" value="{{ o.wartosc }}"{% if forloop.first %} checked{% endif %}><span>{{ o.tekst }}</span></label>
+            {% endfor %}</div>
+          <div class="grid2">
+            <label class="field"><span>{{ f.rodzaj }}</span><select name="rodzaj">{% for o in f.rodzaje %}<option value="{{ o.wartosc }}">{{ o.tekst }}</option>{% endfor %}</select></label>
+            <label class="field"><span>{{ f.lokalizacja_kupno }}</span><input name="lokalizacja" maxlength="160" placeholder="{{ f.lokalizacja_kupno_przyklad }}"></label>
+          </div>
+          <label class="field"><span>{{ f.kryteria }}</span><textarea name="kryteria" maxlength="1200"></textarea></label>
+          <div class="grid2">
+            <label class="field"><span>{{ f.imie }}</span><input name="imie" required autocomplete="given-name" maxlength="80"></label>
+            <label class="field"><span>{{ f.kontakt }}</span><input name="kontakt" required autocomplete="on" maxlength="120"></label>
+          </div>
+          <label class="hp" aria-hidden="true">Strona www<input name="strona_www" tabindex="-1" autocomplete="off"></label>
+          <label class="consent"><input type="checkbox" name="zgoda" required><span>{{ f.zgoda|tekst:pola }}</span></label>
+          <p class="err" id="e-buy" role="alert"></p>
+          <button class="btn" type="submit">{{ f.wyslij }}</button>
+        </form>
+        <div class="done-box" id="d-buy" tabindex="-1"></div>
+      </div>
+    </div>
+  </div>
+</section>{% endwith %}

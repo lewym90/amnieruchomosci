@@ -1,0 +1,972 @@
+{
+  "jezyk": "en",
+  "meta": {
+    "tytul": "Real estate agency in Kraków and the surrounding area | AM Nieruchomości",
+    "opis": "Real estate agency in Kraków and the surrounding area. We check every property legally and physically, and the buyer receives the findings in writing. Sales, lettings, inherited property and unresolved legal status.",
+    "og_tytul": "AM Nieruchomości – checked all the way",
+    "og_opis": "Real estate agency in Kraków and the surrounding area. We check every property before anyone signs.",
+    "lokalizacja_og": "en_GB"
+  },
+  "wspolne": {
+    "polisa_nr": "policy no.",
+    "zamknij": "Close",
+    "ai_zdjecie": "Illustrative photo generated with AI.",
+    "jezyk": "Language",
+    "puste": {
+      "numer": "number",
+      "adres": "address",
+      "towarzystwo": "insurer",
+      "stawka": "rate",
+      "okres": "e.g. 12 months",
+      "telefon": "phone",
+      "email": "e-mail"
+    },
+    "do_uzupelnienia": "to be completed"
+  },
+  "nawigacja": {
+    "przejscie": "Skip to content",
+    "marka_aria": "AM Nieruchomości, home page",
+    "menu_aria": "Menu",
+    "linki": [
+      {
+        "cel": "uslugi",
+        "tekst": "Services",
+        "stopka": "Services"
+      },
+      {
+        "cel": "raport",
+        "tekst": "Report",
+        "stopka": "Verification Report"
+      },
+      {
+        "cel": "sprawy-trudne",
+        "tekst": "Difficult cases",
+        "stopka": "Difficult cases"
+      },
+      {
+        "cel": "nieruchomosci",
+        "tekst": "Properties",
+        "stopka": "Properties"
+      },
+      {
+        "cel": "o-nas",
+        "tekst": "About us",
+        "stopka": "About us"
+      },
+      {
+        "cel": "formalnosci",
+        "tekst": "FAQ",
+        "stopka": "Rules and FAQ"
+      }
+    ],
+    "cta": "Let’s talk"
+  },
+  "hero": {
+    "tytul": "We check every property before anyone signs.",
+    "lede": "Land and mortgage register, encumbrances, inheritance status, arrears to the owners’ association, floor area against the documents. We check all of it and give the buyer the findings in writing.",
+    "przycisk_sprzedaje": "I’m selling a property",
+    "przycisk_kupuje": "I’m buying a property",
+    "obszar": "Kraków and the surrounding area",
+    "lista_tytul": "What we verify",
+    "lista": [
+      "Land and mortgage register, sections I–IV",
+      "Encumbrances and claims",
+      "Basis of ownership",
+      "Arrears to the owners’ association",
+      "Floor area: documents and measurement",
+      "Seller’s authority to sell"
+    ],
+    "lista_nota": "These are six of the report’s eleven sections. All of them are described below."
+  },
+  "zasady": {
+    "aria": "Our principles",
+    "lista": [
+      {
+        "tytul": "Paid by one side only.",
+        "tekst": "We represent you, not both sides of the deal at once."
+      },
+      {
+        "tytul": "No listing without a signed agreement.",
+        "tekst": "Every property you see with us is real and available."
+      },
+      {
+        "tytul": "A report with every transaction.",
+        "tekst": "In writing, dated, numbered and signed."
+      }
+    ]
+  },
+  "pasek": {
+    "lista": [
+      "Land register",
+      "Mortgage",
+      "Easements",
+      "Inheritance",
+      "Owners’ association",
+      "Utilities",
+      "Zoning plan",
+      "Heritage protection",
+      "Flood risk",
+      "Control measurement",
+      "Seller’s authority"
+    ]
+  },
+  "porownanie": {
+    "kicker": "Why it matters",
+    "tytul": "The biggest financial decision of your life. Made on the strength of a dozen or so photos.",
+    "lede": "A listing shows what you can see. The documents tell you the rest: entries in the land and mortgage register, resolutions of the owners’ association, differences in floor area and unfinished inheritance matters.",
+    "wskazowka": "Drag the line across the illustration to see what a listing usually leaves out.",
+    "ogloszenie": {
+      "etykieta": "Listing",
+      "tytul": "3 rooms, 61 m², Kraków",
+      "cena": "Price negotiable",
+      "cechy": [
+        "Bright",
+        "Balcony",
+        "Freshly decorated",
+        "Near the tram"
+      ],
+      "opis": "Ready to move in. Documents in order."
+    },
+    "dokumenty": {
+      "etykieta": "Documents",
+      "wiersze": [
+        {
+          "nazwa": "Register, section III",
+          "wartosc": "==Right of way== for the neighbouring plot"
+        },
+        {
+          "nazwa": "Register, section IV",
+          "wartosc": "==Pending application== to enter a mortgage"
+        },
+        {
+          "nazwa": "Owners’ association",
+          "wartosc": "Resolution on a ==loan for thermal retrofitting==, repaid from service charges"
+        },
+        {
+          "nazwa": "Floor area",
+          "wartosc": "61.0 m² in the deed, ==58.7 m² measured=="
+        },
+        {
+          "nazwa": "Basis of ownership",
+          "wartosc": "Inheritance, ==estate not yet divided=="
+        }
+      ]
+    },
+    "suwak": "Listing compared with the documents",
+    "podpis": "Illustration only. The property and the entries are fictitious, put together from typical situations we check."
+  },
+  "uslugi": {
+    "kicker": "Services",
+    "tytul": "Four services. Each one starts with the documents.",
+    "dla_kogo": "For",
+    "wynagrodzenie": "Fee",
+    "licznik": "Service {n} of {m}",
+    "lista": [
+      {
+        "tytul": "Sales",
+        "podtytul": "Full brokerage with the Verification Report included",
+        "akapity": [
+          "We handle the sale from the first document to the notarial deed. First we check the property. Then we prepare a price analysis based on actual transaction prices, photos and video, publish the listing and run the viewings.",
+          "Every week you receive a written report: what happened, what it means and what we plan for the following week."
+        ],
+        "link": null,
+        "dla_kogo": "Owners of flats, houses and land",
+        "wynagrodzenie": "A percentage, paid by the seller only, under an exclusive agreement"
+      },
+      {
+        "tytul": "Difficult cases",
+        "podtytul": "Inheritance, sitting tenants, co-ownership, encumbrances",
+        "akapity": [
+          "Properties with an unresolved legal status take months of work on documents and conversations with people in conflict. We start by establishing the legal and factual position and set it out for you in writing before any decision is made."
+        ],
+        "link": {
+          "cel": "sprawy-trudne",
+          "tekst": "How we handle difficult cases"
+        },
+        "dla_kogo": "Heirs, co-owners in dispute, owners of encumbered property",
+        "wynagrodzenie": "A flat fee for the preparatory stage plus a percentage on completion"
+      },
+      {
+        "tytul": "Verification Report",
+        "podtytul": "For a property you are buying through someone else",
+        "akapity": [
+          "You have found a flat and are due to pay the deposit in a few days. We check the property’s legal and physical condition and give you a written report, dated, numbered and signed."
+        ],
+        "link": {
+          "cel": "raport",
+          "tekst": "What the report contains"
+        },
+        "dla_kogo": "Buyers who found a property themselves or through another agency",
+        "wynagrodzenie": "A fixed price per report, whether or not the purchase goes ahead"
+      },
+      {
+        "tytul": "Lettings",
+        "podtytul": "Tenant checks, tenancy agreement, inventory",
+        "akapity": [
+          "We find a tenant and check them before they move into your flat. We prepare the tenancy agreement and a handover report with photos of the flat and the meter readings.",
+          "If you live outside Kraków or abroad, we can look after the flat on an ongoing basis: settlements, contact with the tenant and dealing with breakdowns."
+        ],
+        "link": null,
+        "dla_kogo": "Landlords, including those living elsewhere",
+        "wynagrodzenie": "A one-off fee when the agreement is signed, ongoing management by subscription"
+      }
+    ]
+  },
+  "raport": {
+    "kicker": "Verification Report",
+    "tytul": "A document you can put on the table and show your family.",
+    "lede": "The report is analytical: it sets out facts established from documents and sources, compares them and analyses them. Every finding states its source and the date and time it was checked. The buyer receives the report in print, in a folder, before signing the preliminary agreement.",
+    "czym_nie_jest_aria": "What the report is not",
+    "czym_nie_jest": [
+      "It is not a legal opinion or advice of any kind.",
+      "It is not a valuation. The value of a property is determined by a licensed valuer.",
+      "It contains no recommendation. The decision is yours alone."
+    ],
+    "przycisk": "I’d like to see a sample report",
+    "zdjecie_alt": "Agata Ceglińska at her desk, reviewing floor plans of a flat",
+    "zdjecie_podpis": "Agata Ceglińska is responsible for verification and the Verification Reports.",
+    "arkusz_aria": "Contents of the Verification Report",
+    "arkusz_naglowek": [
+      "Verification Report no. [number]",
+      "as at [date, time]",
+      "document structure template"
+    ],
+    "arkusz_tytul": "Report contents",
+    "arkusz_podtytul": "Eleven sections, a list of sources and appendices.",
+    "sekcje": [
+      {
+        "tytul": "Property details",
+        "opis": "Address, register number, floor area per documents, year built, type of ownership, share in the land"
+      },
+      {
+        "tytul": "Land and mortgage register",
+        "opis": "All four sections and pending entries, as at a stated date and time, printout attached"
+      },
+      {
+        "tytul": "Encumbrances and restrictions",
+        "opis": "Mortgages, easements, life-interest rights, claims, tenancy agreements, enforcement proceedings"
+      },
+      {
+        "tytul": "Basis of ownership and legal status",
+        "opis": "How the property was acquired and, for inherited property: inheritance documents, division of the estate, circle of heirs"
+      },
+      {
+        "tytul": "Actual condition vs documents",
+        "opis": "Control measurement, layout compared with the floor plan, visible alterations and the condition of installations"
+      },
+      {
+        "tytul": "Owners’ association or housing cooperative",
+        "opis": "Arrears, service charges, repair fund, loans, resolutions on planned works and short-term letting"
+      },
+      {
+        "tytul": "Utilities and charges",
+        "opis": "Arrears with suppliers, meter readings, heating type and its cost"
+      },
+      {
+        "tytul": "Surroundings and planning",
+        "opis": "Zoning plan or planning decisions, heritage protection, flood risk, aircraft noise, effects of old mine workings, nearby developments"
+      },
+      {
+        "tytul": "Seller",
+        "opis": "Identity, authority, powers of attorney, consistency with the register, representation of companies"
+      },
+      {
+        "tytul": "Identified risks",
+        "opis": "A numbered list: the established facts and an assessment of how significant they are"
+      },
+      {
+        "tytul": "Summary",
+        "opis": "The report’s key findings"
+      }
+    ],
+    "sekcja_zrodla": {
+      "tytul": "Sources and disclaimer",
+      "opis": "Date and time of each check, scope of responsibility, professional indemnity policy number, appendices"
+    },
+    "przycisk_wiecej": "Full contents: 11 sections and sources",
+    "przycisk_zwin": "Collapse contents",
+    "klauzula": "This report was prepared on the basis of documents and information obtained from the sources listed, as at [date]. The findings relate only to the position on that day. The report is analytical and is not a legal opinion, advice or a valuation. Our business is covered by the compulsory third-party liability insurance of a real estate broker, policy no. [number]."
+  },
+  "krakow": {
+    "kicker": "Kraków and the surrounding area",
+    "tytul": "Here, a listing won’t tell you everything.",
+    "lede": "The Kraków market has its own pitfalls. Besides the land register and the owners’ association’s documents, we check things that in this region can change a property’s value or a buyer’s plans.",
+    "karty": [
+      {
+        "tytul": "Tenement houses and heritage",
+        "tekst": "Entry in the register or the municipal list of historic buildings, conservation zones and the rules of the Old Town Cultural Park. They decide which works need the conservator’s consent and what may be changed on the facade."
+      },
+      {
+        "tytul": "Flood risk",
+        "tekst": "We check the flood hazard maps for the Vistula and its tributaries: the Wilga, Prądnik, Dłubnia and Serafa. This matters for safety and for the cost of insurance."
+      },
+      {
+        "tytul": "Balice airport",
+        "tekst": "A restricted-use area applies around Kraków-Balice airport. We check whether the property lies within it and what that means for noise and building."
+      },
+      {
+        "tytul": "Old mine workings",
+        "tekst": "Around Wieliczka and Bochnia we check whether the property is within reach of the old salt mine workings."
+      },
+      {
+        "tytul": "Housing cooperatives",
+        "tekst": "A cooperative ownership right to a flat often has no land register entry. We establish the legal position with the cooperative and check whether it is worth opening a register before the sale."
+      },
+      {
+        "tytul": "What may be built next door",
+        "tekst": "We check whether a local zoning plan covers the area and, if not, which planning decisions have been issued nearby."
+      }
+    ]
+  },
+  "proces": {
+    "kicker": "How we work",
+    "tytul": "Five stages, from the first conversation to the notarial deed.",
+    "lede": "Nothing is signed at the first meeting. We leave the agreement with you to read at your own pace.",
+    "kroki": [
+      {
+        "tytul": "Meeting and inspection",
+        "tekst": "We come over, look at the property, ask about the documents and listen."
+      },
+      {
+        "tytul": "Verification",
+        "tekst": "We check the legal and physical condition. If something is wrong, we tell you straight away, not three months later."
+      },
+      {
+        "tytul": "Price analysis",
+        "tekst": "We compare actual transaction prices from notarial deeds for similar properties nearby, not asking prices from listings. This is not a valuation."
+      },
+      {
+        "tytul": "Preparation and listing",
+        "tekst": "Photo shoot, video, a dimensioned floor plan and a description based only on verified facts. Publication on selected portals."
+      },
+      {
+        "tytul": "Through to completion",
+        "tekst": "Viewings, negotiations, the preliminary agreement and the documents for the notary. A written report every week."
+      }
+    ],
+    "tygodniowy": {
+      "przycisk": "Sample weekly report",
+      "aria": "Sample weekly report",
+      "naglowek": "Weekly report",
+      "naglowek_dopisek": "sent every Friday",
+      "etykieta": "Sample, example data",
+      "liczby": [
+        {
+          "liczba": 412,
+          "opis": "listing views"
+        },
+        {
+          "liczba": 9,
+          "opis": "phone calls"
+        },
+        {
+          "liczba": 4,
+          "opis": "viewings"
+        },
+        {
+          "liczba": 1,
+          "opis": "price offer"
+        }
+      ],
+      "wiersze": [
+        {
+          "nazwa": "What viewers said",
+          "wartosc": "The layout was well received. Two people mentioned the lack of a lift."
+        },
+        {
+          "nazwa": "What it means",
+          "wartosc": "Interest is steady. Questions are mostly about running costs."
+        },
+        {
+          "nazwa": "Plan for next week",
+          "wartosc": "Two viewings on Saturday, adding a breakdown of charges to the listing."
+        }
+      ]
+    }
+  },
+  "sprawy": {
+    "kicker": "Difficult cases",
+    "tytul": "Difficult cases. Clean transactions.",
+    "lede": "These cases can be seen through to the end. They take months of work on documents, conversations with people in a difficult situation, and patience.",
+    "akapity": [
+      "We start by establishing the legal and factual position. We set out for you in writing what needs to be done, in what order and how long it may take. This stage is priced separately, and you can stop there if you wish."
+    ],
+    "uwaga": "Where a case needs court proceedings or legal assistance, we tell you that you need an advocate, a legal adviser or a notary.",
+    "przycisk": "I’ll describe my case",
+    "przyklady_aria": "Examples of cases",
+    "przyklady": [
+      "A flat left by someone who died, with no inheritance proceedings.",
+      "An occupant who won’t move out.",
+      "A mortgage higher than the property is worth.",
+      "Co-owners who don’t speak to each other.",
+      "A share in a tenement house whose co-owners are hard to trace."
+    ]
+  },
+  "o_nas": {
+    "kicker": "About us",
+    "tytul": "For years, we were not allowed to take anything on trust.",
+    "lede": "We worked where every document had to be read to the end and every piece of information confirmed from an independent source. Other people’s affairs depended on how thorough we were. We have brought the same method to property transactions.",
+    "zdjecie_alt": "Michał Lewandowski and Agata Ceglińska, owners of AM Nieruchomości",
+    "osoby": [
+      {
+        "imie": "Michał Lewandowski",
+        "rola": "Co-owner",
+        "opis": "Responsible for first contact, viewings, negotiations and photography. Keeps conversations calm and to the point, even when the parties are in conflict."
+      },
+      {
+        "imie": "Agata Ceglińska",
+        "rola": "Co-owner",
+        "opis": "Responsible for verifying the legal and physical condition, the Verification Reports and agreements. For years she trained others and prepared documents that had to be complete and precise."
+      }
+    ],
+    "czego_nie_robimy_aria": "What we don’t do",
+    "czego_nie_robimy": [
+      {
+        "tytul": "We don’t promise a price or a date.",
+        "tekst": "We give you an analysis based on transaction prices and tell you what follows from it, even when it isn’t good news."
+      },
+      {
+        "tytul": "We don’t take fees from both sides.",
+        "tekst": "We represent one side, and that side knows it from the start."
+      },
+      {
+        "tytul": "We don’t list properties without an agreement.",
+        "tekst": "No one else’s listings and no properties we haven’t checked."
+      },
+      {
+        "tytul": "We don’t take on cases we can’t finish.",
+        "tekst": "If we say no, we will tell you why and what needs to happen first."
+      }
+    ]
+  },
+  "motto": {
+    "aria": "Motto",
+    "tekst": "Checked all the way.",
+    "podpis": "Checked before you sign and handled all the way to the notarial deed."
+  },
+  "obszar": {
+    "kicker": "Where we work",
+    "tytul": "Kraków and the four counties around it.",
+    "lede": "We work without a fixed office: we meet at the property, at your place or wherever suits you. That way we can go wherever the case is.",
+    "grupy": [
+      {
+        "nazwa": "Kraków",
+        "miejsca": [
+          "Stare Miasto",
+          "Grzegórzki",
+          "Prądnik Czerwony",
+          "Prądnik Biały",
+          "Krowodrza",
+          "Bronowice",
+          "Zwierzyniec",
+          "Dębniki",
+          "Łagiewniki-Borek Fałęcki",
+          "Swoszowice",
+          "Podgórze Duchackie",
+          "Bieżanów-Prokocim",
+          "Podgórze",
+          "Czyżyny",
+          "Mistrzejowice",
+          "Bieńczyce",
+          "Wzgórza Krzesławickie",
+          "Nowa Huta"
+        ]
+      },
+      {
+        "nazwa": "Kraków County",
+        "miejsca": [
+          "Zabierzów",
+          "Zielonki",
+          "Michałowice",
+          "Wielka Wieś",
+          "Liszki",
+          "Czernichów",
+          "Skawina",
+          "Mogilany",
+          "Świątniki Górne",
+          "Kocmyrzów-Luborzyca",
+          "Igołomia-Wawrzeńczyce",
+          "Krzeszowice",
+          "Jerzmanowice-Przeginia",
+          "Iwanowice",
+          "Skała",
+          "Słomniki",
+          "Sułoszowa"
+        ]
+      },
+      {
+        "nazwa": "Wieliczka County",
+        "miejsca": [
+          "Wieliczka",
+          "Niepołomice",
+          "Biskupice",
+          "Gdów",
+          "Kłaj"
+        ]
+      },
+      {
+        "nazwa": "Myślenice County",
+        "miejsca": [
+          "Myślenice",
+          "Dobczyce",
+          "Siepraw",
+          "Sułkowice",
+          "Pcim",
+          "Lubień",
+          "Raciechowice",
+          "Tokarnia",
+          "Wiśniowa"
+        ]
+      },
+      {
+        "nazwa": "Bochnia County",
+        "miejsca": [
+          "Bochnia",
+          "Nowy Wiśnicz",
+          "Lipnica Murowana",
+          "Łapanów",
+          "Rzezawa",
+          "Drwinia",
+          "Trzciana"
+        ]
+      }
+    ],
+    "nota": "Outside this area we take on cases by arrangement, especially Verification Reports and difficult cases."
+  },
+  "faq": {
+    "kicker": "Rules and FAQ",
+    "tytul": "Rules, regulations and answers to common questions.",
+    "lede": "We operate within Polish law on real estate management, personal data protection, consumer rights, and anti-money laundering and counter-terrorist financing.",
+    "widoczne": 5,
+    "wiecej": "More questions ({n})",
+    "pytania": [
+      {
+        "pytanie": "How much does it cost?",
+        "odpowiedz": [
+          "There is one published rate: [[stawka]]. On a sale, the fee is paid by the seller only, once the sale agreement has been signed as a notarial deed. We accept payment by bank transfer only. For difficult cases, the preparatory stage is priced separately. The Verification Report for buyers has a fixed price."
+        ]
+      },
+      {
+        "pytanie": "Is the Verification Report legal advice or a legal opinion?",
+        "odpowiedz": [
+          "No. The report is an analytical document: it sets out facts established from documents and the sources listed, compares and analyses them. It is not a legal opinion, advice of any kind or a valuation, and it contains no recommendation. Where legal help is needed, the right person is an advocate, a legal adviser or a notary."
+        ]
+      },
+      {
+        "pytanie": "Are you insured?",
+        "odpowiedz": [
+          "Yes. A real estate broker in Poland must hold third-party liability insurance for damage caused in connection with brokerage activities. Each of us has our own policy. We give the policy numbers on this website, in the agreement and in every report: [[polisy]]."
+        ]
+      },
+      {
+        "pytanie": "Why do you need an identity document?",
+        "odpowiedz": [
+          "A real estate broker is an obliged institution under the Polish Act on Counteracting Money Laundering and Terrorist Financing. Before starting work with a client, we must apply customer due diligence measures, including identifying the client and verifying their identity and, in certain cases, establishing the beneficial owner. If these measures cannot be applied, the law does not allow us to work together.",
+          "[More about our AML procedure](okno:aml)"
+        ]
+      },
+      {
+        "pytanie": "What form does the brokerage agreement take?",
+        "odpowiedz": [
+          "Under Polish law, a brokerage agreement must be made in writing or in electronic form, otherwise it is invalid. It sets out the scope of work, the fee and how the fee is calculated. We never sign the agreement at the first meeting."
+        ]
+      },
+      {
+        "pytanie": "Can I withdraw from the agreement?",
+        "odpowiedz": [
+          "Yes, if you are a consumer. We have no fixed office, so our agreements are concluded off-premises or at a distance. In that case you may withdraw within 14 days without giving a reason, under the Polish Consumer Rights Act. You will receive information about this right and a model withdrawal form together with the agreement.",
+          "If you would like us to start work before that period ends, we will ask you for an explicit request in writing."
+        ]
+      },
+      {
+        "pytanie": "How is a price analysis different from a valuation?",
+        "odpowiedz": [
+          "A price analysis compares the transaction prices of similar properties nearby, based on prices in notarial deeds rather than in listings. It is not a valuation. Formal valuations are carried out by licensed property valuers."
+        ]
+      },
+      {
+        "pytanie": "Why an exclusive agreement?",
+        "odpowiedz": [
+          "Before a property goes on the market, we verify it, arrange a photo shoot and prepare a campaign. Without exclusivity we cannot do this properly. The term of the agreement and how it can be terminated are set out in the agreement, which you receive to read before signing."
+        ]
+      },
+      {
+        "pytanie": "Which area do you cover?",
+        "odpowiedz": [
+          "Kraków and the counties of Kraków, Wieliczka, Myślenice and Bochnia. The full list of municipalities is in the [Where we work](#obszar) section."
+        ]
+      },
+      {
+        "pytanie": "Which language do you work in?",
+        "odpowiedz": [
+          "Meetings and documents are in Polish. If you are more comfortable in another language, we will arrange an interpreter. At the notary, a sworn translator is required by law when a party does not speak Polish, and we organise this in advance."
+        ]
+      },
+      {
+        "pytanie": "Can I sell or let a property while living abroad?",
+        "odpowiedz": [
+          "Yes. We can handle a sale or letting remotely: we prepare the documents in advance and keep you informed through the weekly report. The notarial deed of sale can be signed on your behalf by an attorney-in-fact."
+        ]
+      },
+      {
+        "pytanie": "How is my personal data processed?",
+        "odpowiedz": [
+          "Only to the extent necessary and only for the purpose for which it was provided. Details, including your rights, are in the [information on the processing of personal data](okno:rodo)."
+        ]
+      }
+    ]
+  },
+  "oferty": {
+    "etykieta": "Properties",
+    "tytul_pusty": "Our first properties are being verified.",
+    "opis_pusty": "A property appears here only after we have signed an agreement with the owner and completed the verification. Looking for a property? Leave your criteria and we will get in touch when a suitable one comes up.",
+    "tytul_aktualne": "Current listings",
+    "opis_aktualne": "Each of them has a signed agreement with the owner and has passed our verification. Nothing suitable? Leave your criteria and we will get in touch when the right property comes up.",
+    "przycisk": "I’ll leave my criteria"
+  },
+  "kontakt": {
+    "kicker": "Contact",
+    "tytul": "Let’s start with a conversation.",
+    "lede": "Just describe your situation briefly. We will call or write back and arrange a meeting. The first conversation is without obligation.",
+    "przycisk_telefon": "Phone",
+    "przycisk_email": "E-mail",
+    "etykiety": {
+      "telefon": "Phone",
+      "email": "E-mail",
+      "adres": "Correspondence address",
+      "obszar": "Area",
+      "spotkania": "Meetings"
+    },
+    "obszar": "Kraków and the surrounding area",
+    "spotkania": "By appointment: at the property, at your place or wherever suits you",
+    "formularz": {
+      "zakladki_aria": "Type of enquiry",
+      "zakladka_sprzedaz": "I’m selling or letting",
+      "zakladka_kupno": "I’m buying",
+      "krok": "Step {n} of 3",
+      "krok1": "Step 1: what it’s about",
+      "krok2": "Step 2: the property",
+      "krok3": "Step 3: contact details",
+      "sprawa": "What is it about",
+      "sprawy": [
+        {
+          "wartosc": "sprzedaz",
+          "tekst": "Sale"
+        },
+        {
+          "wartosc": "najem",
+          "tekst": "Letting"
+        },
+        {
+          "wartosc": "sprawa_trudna",
+          "tekst": "Difficult case"
+        }
+      ],
+      "rodzaj": "Type of property",
+      "rodzaje": [
+        {
+          "wartosc": "mieszkanie",
+          "tekst": "Flat"
+        },
+        {
+          "wartosc": "dom",
+          "tekst": "House"
+        },
+        {
+          "wartosc": "dzialka",
+          "tekst": "Plot of land"
+        },
+        {
+          "wartosc": "lokal_uzytkowy",
+          "tekst": "Commercial unit"
+        }
+      ],
+      "lokalizacja": "Town or district",
+      "lokalizacja_przyklad": "e.g. Kraków, Prądnik Biały",
+      "metraz": "Floor area (m², approx.)",
+      "metraz_przyklad": "e.g. 54",
+      "sytuacja": "Legal situation",
+      "sytuacje": [
+        {
+          "wartosc": "uregulowana",
+          "tekst": "Clear, one owner"
+        },
+        {
+          "wartosc": "wspolwlasnosc",
+          "tekst": "Several co-owners"
+        },
+        {
+          "wartosc": "spadek",
+          "tekst": "Inheritance, proceedings not completed"
+        },
+        {
+          "wartosc": "lokator",
+          "tekst": "Someone is living in the property"
+        },
+        {
+          "wartosc": "hipoteka",
+          "tekst": "Mortgage on the property"
+        },
+        {
+          "wartosc": "nie_wiem",
+          "tekst": "I don’t know"
+        }
+      ],
+      "uwaga": "Please don’t enter the land register number, your PESEL number or document scans here. We will ask for documents at the meeting.",
+      "imie": "First name",
+      "kontakt": "Phone or e-mail",
+      "wiadomosc": "A few words about your case (optional)",
+      "zgoda": "I have read the [information on the processing of personal data](okno:rodo).",
+      "dalej": "Next",
+      "wstecz": "Back",
+      "wyslij": "Send enquiry",
+      "cel": "What do you need",
+      "cele": [
+        {
+          "wartosc": "szukam",
+          "tekst": "I’m looking for a property"
+        },
+        {
+          "wartosc": "raport",
+          "tekst": "A report on a property I’ve found"
+        }
+      ],
+      "lokalizacja_kupno": "Location",
+      "lokalizacja_kupno_przyklad": "e.g. Kraków, Dębniki",
+      "kryteria": "Criteria (floor area, number of rooms, budget, timing)"
+    }
+  },
+  "stopka": {
+    "opis": "Real estate agency in Kraków and the surrounding area. We check every property legally and physically, and the buyer receives the findings in writing.",
+    "haslo": "Checked all the way.",
+    "kontakt": "Contact",
+    "prawne": {
+      "rodo": "Privacy policy",
+      "aml": "Anti-money laundering",
+      "cookies": "Cookies",
+      "nota": "Legal notice"
+    },
+    "firma": "[[nazwa_pelna]], [[adres]], NIP (tax ID) [[nip]], REGON [[regon]].",
+    "oc": "Compulsory third-party liability insurance of a real estate broker: [[polisy]].",
+    "prawa": "© [[rok]] AM Nieruchomości. The content of this website is for information only and does not constitute an offer within the meaning of Article 66 of the Polish Civil Code or advice."
+  },
+  "okna": {
+    "rodo": {
+      "tytul": "Information on the processing of personal data",
+      "tresc": [
+        {
+          "akapit": "In accordance with Article 13 of Regulation (EU) 2016/679 of the European Parliament and of the Council (GDPR), we inform you that:"
+        },
+        {
+          "naglowek": "Controllers"
+        },
+        {
+          "akapit": "Your data is controlled by the partners of the civil-law partnership [[nazwa_pelna]], [[adres]], NIP (tax ID) [[nip]]. Contact on personal data matters: [[email]], [[telefon]]."
+        },
+        {
+          "naglowek": "Purposes and legal bases"
+        },
+        {
+          "lista": [
+            "Responding to your enquiry and contact before an agreement is concluded, at your request: Article 6(1)(b) GDPR.",
+            "Concluding and performing a brokerage agreement or an agreement to prepare a Verification Report: Article 6(1)(b) GDPR.",
+            "Compliance with legal obligations, in particular under the Act on Counteracting Money Laundering and Terrorist Financing and tax and accounting law: Article 6(1)(c) GDPR.",
+            "Establishing, pursuing or defending claims: Article 6(1)(f) GDPR, based on our legitimate interest."
+          ]
+        },
+        {
+          "naglowek": "Retention period"
+        },
+        {
+          "akapit": "Data from enquiries that did not lead to an agreement is kept for no longer than [[okres_przechowywania_zapytan]]. Data related to an agreement is kept for the duration of the agreement and then until the limitation periods for claims and the periods required by tax law have expired. Documentation collected as part of customer due diligence is kept for 5 years from the first day of the year following the year in which the business relationship ended or the occasional transaction was carried out, as required by the Act on Counteracting Money Laundering and Terrorist Financing."
+        },
+        {
+          "naglowek": "Recipients"
+        },
+        {
+          "akapit": "Data may be shared with entities that provide services to us under data processing agreements (hosting, e-mail, accounting, IT systems), and with entities authorised by law, including the General Inspector of Financial Information. When a transaction is carried out, we pass the necessary data to the notary. [[poza_eog]]"
+        },
+        {
+          "naglowek": "Your rights"
+        },
+        {
+          "akapit": "You have the right to access your data, to rectify, erase or restrict its processing, to data portability and to object to processing based on Article 6(1)(f) GDPR. You also have the right to lodge a complaint with the President of the Personal Data Protection Office (ul. Stawki 2, 00-193 Warsaw)."
+        },
+        {
+          "naglowek": "Voluntary provision"
+        },
+        {
+          "akapit": "Providing data in the form is voluntary but necessary for us to reply. Providing the data required by anti-money laundering law is a condition of concluding an agreement. We do not make automated decisions and do not carry out profiling."
+        },
+        {
+          "naglowek": "Forms on this website"
+        },
+        {
+          "akapit": "[[formularz_dane]]"
+        }
+      ],
+      "formularz_program": "Data from the form goes directly to the software we use to run the agency’s cases and is kept there for the period stated above.",
+      "formularz_poczta": "The form does not store any data on the website’s server. Once completed, it prepares an e-mail which you send yourself from your own e-mail program.",
+      "poza_eog": "If any provider processes data outside the European Economic Area, this must be stated here together with the legal basis for the transfer."
+    },
+    "aml": {
+      "tytul": "Anti-money laundering",
+      "tresc": [
+        {
+          "akapit": "As a real estate broker, we are an obliged institution under the Polish Act of 1 March 2018 on Counteracting Money Laundering and Terrorist Financing. This means obligations that apply to every client, regardless of the value of the transaction."
+        },
+        {
+          "naglowek": "What this means in practice"
+        },
+        {
+          "lista": [
+            "We identify each client and verify their identity on the basis of an identity document.",
+            "For legal persons and other entities, we establish who is authorised to represent them and who the beneficial owner is.",
+            "We assess the business relationship and, where justified, establish the purpose and nature of the transaction and the source of funds.",
+            "We establish whether the client is a politically exposed person.",
+            "We monitor the business relationship on an ongoing basis."
+          ]
+        },
+        {
+          "naglowek": "What we cannot do"
+        },
+        {
+          "akapit": "If customer due diligence measures cannot be applied, the law does not allow us to start working together or to carry out the transaction. Nor may we inform clients that information has been passed to the General Inspector of Financial Information."
+        },
+        {
+          "naglowek": "Keeping documents"
+        },
+        {
+          "akapit": "Copies of documents and information obtained as part of these measures are kept for the period required by the Act. Details on personal data are given in the [information on the processing of personal data](okno:rodo)."
+        }
+      ]
+    },
+    "cookies": {
+      "tytul": "Cookies",
+      "tresc": [
+        {
+          "akapit": "This website does not use cookies, analytics tools or advertising pixels."
+        },
+        {
+          "akapit": "The website stores only technical information in your browser: that the welcome animation has already been shown in this tab (until the tab is closed) and a copy of the page so that it can be opened without an internet connection. This information is not used to recognise or track visitors."
+        },
+        {
+          "akapit": "The website’s fonts and images are loaded from its own server. The list of properties and their photos are loaded from the server of our agency’s software. The “Area on the map” link opens OpenStreetMap only when you click it."
+        },
+        {
+          "akapit": "If we introduce analytics or advertising tools in the future, we will ask for your consent before using them and update this information."
+        }
+      ]
+    },
+    "nota": {
+      "tytul": "Legal notice",
+      "tresc": [
+        {
+          "akapit": "The content of this website is for information only. It does not constitute an offer within the meaning of the Polish Civil Code, or legal, tax, financial or any other advice."
+        },
+        {
+          "akapit": "The Verification Report is an analytical document containing facts, their comparison and analysis. It is not a legal opinion or a valuation and contains no recommendation."
+        },
+        {
+          "akapit": "A price analysis is a comparison of transaction prices and is not a valuation of property within the meaning of Polish real estate law."
+        },
+        {
+          "akapit": "Illustrations on this website are for illustrative purposes only. Photos generated with AI are marked in their captions."
+        },
+        {
+          "akapit": "This is a translation of the Polish website. In the event of any discrepancy, the Polish version prevails."
+        }
+      ]
+    }
+  },
+  "js": {
+    "suwak_wartosc": "Documents revealed: {p}%",
+    "oferta": "Listing",
+    "zdjecie": "photo {n}",
+    "ai_oferta": "Some photos have been modified with AI. The changes are described in the listing text.",
+    "etykiety": {
+      "rodzaj": "Type",
+      "okolica": "Area",
+      "powierzchnia": "Floor area",
+      "pokoje": "Rooms",
+      "pietro": "Floor",
+      "rok": "Year built",
+      "dzialka": "Plot",
+      "rynek": "Market",
+      "numer": "Listing number",
+      "oplaty": "Additional charges"
+    },
+    "parter": "ground floor",
+    "pietro": "floor {n}",
+    "z_pieter": "{n} of {m}",
+    "miesiecznie": "PLN / month",
+    "zl": "PLN",
+    "zl_m2": "PLN/m²",
+    "mapa": "Area on the map",
+    "mapa_nota": "The location is approximate. We give the exact address when arranging a viewing.",
+    "opis_po_polsku": "The listing description is in Polish.",
+    "zapytaj": "Ask about this property",
+    "zapytanie_oferta": "I’m asking about listing {numer}: {tytul}.",
+    "udostepnij": "Share",
+    "skopiowano": "Link copied",
+    "typy": {
+      "mieszkanie": "Flat",
+      "dom": "House",
+      "dzialka": "Plot of land",
+      "lokal_uzytkowy": "Commercial unit",
+      "garaz": "Garage",
+      "inne": "Property"
+    },
+    "tryby": {
+      "sprzedaz": "for sale",
+      "najem": "to let"
+    },
+    "rynki": {
+      "pierwotny": "New build",
+      "wtorny": "Resale"
+    },
+    "pokoje": {
+      "one": "room",
+      "other": "rooms"
+    },
+    "transakcje": {
+      "one": "transaction completed",
+      "other": "transactions completed"
+    },
+    "transakcje_rok": "{liczba} {forma} in {rok}",
+    "krok": "Step {n} of 3",
+    "blad_lokalizacja": "Please enter the town or district.",
+    "blad_kontakt": "Please enter a valid phone number or e-mail address.",
+    "blad_zgoda": "Please confirm that you have read the information on the processing of personal data.",
+    "blad_brak": "Please enter your first name and a phone number or e-mail address.",
+    "blad_wysylki": "The enquiry could not be sent. Please try again or send it from your e-mail program.",
+    "wysylanie": "Sending…",
+    "wyslane_tytul": "Thank you. Your enquiry has arrived.",
+    "wyslane_tekst": "We will reply within one working day.",
+    "poczta_tytul": "Your enquiry is ready to send.",
+    "poczta_tekst": "Just open it in your e-mail program and send it. We will reply within one working day.",
+    "poczta_przycisk": "Open e-mail program",
+    "podglad_tytul": "Enquiry preview",
+    "podglad_tekst": "The form is not yet connected to the agency’s software. This is what the enquiry would look like:",
+    "nowe": "New enquiry",
+    "temat": "Website enquiry: {opis}",
+    "pola": {
+      "sprawa": "Type of case",
+      "rodzaj": "Property",
+      "lokalizacja": "Location",
+      "metraz": "Floor area",
+      "sytuacja": "Legal situation",
+      "wiadomosc": "Message",
+      "imie": "First name",
+      "kontakt": "Contact",
+      "cel": "Purpose",
+      "kryteria": "Criteria"
+    },
+    "nie_podano": "not given",
+    "zgoda_tekst": "I have read the information on the processing of personal data.",
+    "wiecej_pytan": "More questions ({n})",
+    "mniej_pytan": "Fewer questions",
+    "pietra_od_jedynki": false,
+    "m2": "m²"
+  }
+}

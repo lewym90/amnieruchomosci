@@ -1,0 +1,31 @@
+{% load static strona %}<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img src="{% static 'strona/img/logo.webp' %}" alt="{{ w.firma.marka }}" width="600" height="423" loading="lazy" decoding="async">
+        <p>{{ t.stopka.opis|tekst:pola }}</p>
+        <p class="foot-haslo">{{ t.stopka.haslo }}</p>
+      </div>
+      <div>
+        <ul>
+          {% for l in t.nawigacja.linki %}<li><a href="#{{ l.cel }}">{{ l.stopka }}</a></li>
+          {% endfor %}<li><a href="#kontakt">{{ t.stopka.kontakt }}</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li><button class="link" type="button" data-open="dlg-rodo">{{ t.stopka.prawne.rodo }}</button></li>
+          <li><button class="link" type="button" data-open="dlg-aml">{{ t.stopka.prawne.aml }}</button></li>
+          <li><button class="link" type="button" data-open="dlg-cookies">{{ t.stopka.prawne.cookies }}</button></li>
+          <li><button class="link" type="button" data-open="dlg-nota">{{ t.stopka.prawne.nota }}</button></li>
+        </ul>
+        <p class="foot-jezyki">{% for j in jezyki %}<a href="{{ j.href }}" hreflang="{{ j.kod }}" lang="{{ j.kod }}"{% if j.kod == jezyk %} aria-current="true"{% endif %}>{{ j.nazwa }}</a>{% endfor %}</p>
+      </div>
+    </div>
+    <div class="legal">
+      <p>{{ t.stopka.firma|tekst:pola }}</p>
+      <p>{{ t.stopka.oc|tekst:pola }}</p>
+      <p>{{ t.stopka.prawa|tekst:pola }}</p>
+    </div>
+  </div>
+</footer>

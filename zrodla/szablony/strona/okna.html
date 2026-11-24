@@ -1,0 +1,13 @@
+{% load strona %}<dialog id="dlg-oferta" class="dlg-oferta" aria-labelledby="do-t">
+  <div class="dh"><h2 id="do-t">{{ t.js.oferta }}</h2><button class="x" type="button" data-close aria-label="{{ t.wspolne.zamknij }}">×</button></div>
+  <div class="db" id="do-tresc"></div>
+</dialog>
+{% for klucz, okno in t.okna.items %}<dialog id="dlg-{{ klucz }}" aria-labelledby="dlg-{{ klucz }}-t">
+  <div class="dh"><h2 id="dlg-{{ klucz }}-t">{{ okno.tytul }}</h2><button class="x" type="button" data-close aria-label="{{ t.wspolne.zamknij }}">×</button></div>
+  <div class="db">
+    {% for b in okno.tresc %}{% if b.naglowek %}<h3>{{ b.naglowek }}</h3>
+    {% elif b.lista %}<ul>{% for l in b.lista %}<li>{{ l|tekst:pola }}</li>{% endfor %}</ul>
+    {% else %}<p>{{ b.akapit|tekst:pola }}</p>
+    {% endif %}{% endfor %}</div>
+</dialog>
+{% endfor %}

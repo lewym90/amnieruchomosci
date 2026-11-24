@@ -1,0 +1,16 @@
+{% load strona %}<section class="sec bez-gory" id="obszar" aria-labelledby="h-obszar">
+  <div class="wrap obszar">
+    <div>
+      <span class="kicker">{{ t.obszar.kicker }}</span>
+      <h2 id="h-obszar">{{ t.obszar.tytul|tekst:pola }}</h2>
+      <p class="lede odstep">{{ t.obszar.lede|tekst:pola }}</p>
+      <p class="muted">{{ t.obszar.nota|tekst:pola }}</p>
+    </div>
+    <div class="obszar-grupy">
+      {% for g in t.obszar.grupy %}<div class="obszar-g">
+        <h3>{{ g.nazwa }}</h3>
+        <ul>{% for m in g.miejsca %}<li>{{ m }}</li>{% endfor %}</ul>
+      </div>
+      {% endfor %}</div>
+  </div>
+</section>

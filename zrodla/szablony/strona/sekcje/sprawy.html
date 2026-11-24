@@ -1,0 +1,15 @@
+{% load strona %}<section class="sec hard" id="sprawy-trudne" aria-labelledby="h-hard">
+  <div class="wrap">
+    <div>
+      <span class="kicker">{{ t.sprawy.kicker }}</span>
+      <h2 id="h-hard">{{ t.sprawy.tytul|tekst:pola }}</h2>
+      <p class="lede odstep">{{ t.sprawy.lede|tekst:pola }}</p>
+      {% for a in t.sprawy.akapity %}<p>{{ a|tekst:pola }}</p>
+      {% endfor %}<p class="muted">{{ t.sprawy.uwaga|tekst:pola }}</p>
+      <div class="cta-row"><a class="btn" href="#kontakt" data-tab="sell" data-hard="1">{{ t.sprawy.przycisk }}</a></div>
+    </div>
+    <ul class="cases" aria-label="{{ t.sprawy.przyklady_aria }}">
+      {% for p in t.sprawy.przyklady %}<li>{{ p|tekst:pola }}</li>
+      {% endfor %}</ul>
+  </div>
+</section>

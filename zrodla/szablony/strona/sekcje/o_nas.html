@@ -1,0 +1,23 @@
+{% load strona %}<section class="sec report" id="o-nas" aria-labelledby="h-onas">
+  <div class="wrap about">
+    <figure class="rimg">
+      <img src="{{ obrazy.zespol.src }}" srcset="{{ obrazy.zespol.srcset }}" sizes="(max-width: 900px) 100vw, 480px" alt="{{ t.o_nas.zdjecie_alt }}" loading="lazy" decoding="async" width="{{ obrazy.zespol.szerokosc }}" height="{{ obrazy.zespol.wysokosc }}">
+      {% if obrazy.zespol.ai %}<figcaption class="ai-nota">{{ t.wspolne.ai_zdjecie }}</figcaption>{% endif %}
+    </figure>
+    <div>
+      <span class="kicker">{{ t.o_nas.kicker }}</span>
+      <h2 id="h-onas">{{ t.o_nas.tytul|tekst:pola }}</h2>
+      <p class="lede odstep">{{ t.o_nas.lede|tekst:pola }}</p>
+      <div class="people">
+        {% for o in t.o_nas.osoby %}<div>
+          <h3>{{ o.imie }}</h3>
+          <span class="role">{{ o.rola }}</span>
+          <p>{{ o.opis|tekst:pola }}</p>
+        </div>
+        {% endfor %}</div>
+      <div class="never" aria-label="{{ t.o_nas.czego_nie_robimy_aria }}">
+        {% for n in t.o_nas.czego_nie_robimy %}<div><b>{{ n.tytul|tekst:pola }}</b><span>{{ n.tekst|tekst:pola }}</span></div>
+        {% endfor %}</div>
+    </div>
+  </div>
+</section>

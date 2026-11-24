@@ -1,0 +1,5 @@
+{% load strona %}<section class="rules" aria-label="{{ t.zasady.aria }}">
+  <div class="wrap">
+    {% for z in t.zasady.lista %}<div class="rule-i"><strong>{{ z.tytul|tekst:pola }}</strong><span>{{ z.tekst|tekst:pola }}</span></div>
+    {% endfor %}</div>
+</section>

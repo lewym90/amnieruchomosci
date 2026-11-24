@@ -1,0 +1,12 @@
+{% load strona %}<section class="sec krakow" id="krakow" aria-labelledby="h-krakow">
+  <div class="wrap">
+    <div class="krakow-head">
+      <span class="kicker">{{ t.krakow.kicker }}</span>
+      <h2 id="h-krakow">{{ t.krakow.tytul|tekst:pola }}</h2>
+      <p class="lede odstep">{{ t.krakow.lede|tekst:pola }}</p>
+    </div>
+    <ul class="krakow-karty">
+      {% for k in t.krakow.karty %}<li><span class="krakow-n">{{ forloop.counter|stringformat:"02d" }}</span><h3>{{ k.tytul|tekst:pola }}</h3><p>{{ k.tekst|tekst:pola }}</p></li>
+      {% endfor %}</ul>
+  </div>
+</section>

@@ -1,0 +1,14 @@
+{% load strona %}<section class="sec band" id="nieruchomosci" aria-labelledby="h-oferty">
+  <div class="wrap">
+    <div class="band-in">
+      <div>
+        <span class="eyebrow">{{ t.oferty.etykieta }}</span>
+        <h2 id="h-oferty" data-aktualne="{{ t.oferty.tytul_aktualne }}">{{ t.oferty.tytul_pusty|tekst:pola }}</h2>
+        <p class="oferty-liczby" id="oferty-liczby" hidden></p>
+        <p class="muted" id="oferty-opis" data-aktualne="{{ t.oferty.opis_aktualne }}">{{ t.oferty.opis_pusty|tekst:pola }}</p>
+      </div>
+      <a class="btn" href="#kontakt" data-tab="buy">{{ t.oferty.przycisk }}</a>
+    </div>
+    <div class="oferty-siatka" id="oferty-lista" hidden></div>
+  </div>
+</section>

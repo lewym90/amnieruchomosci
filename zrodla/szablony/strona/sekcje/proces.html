@@ -1,0 +1,27 @@
+{% load strona %}<section class="sec" id="proces" aria-labelledby="h-proces">
+  <div class="wrap proc">
+    <div class="proc-sticky">
+      <span class="kicker">{{ t.proces.kicker }}</span>
+      <h2 id="h-proces">{{ t.proces.tytul|tekst:pola }}</h2>
+      <p class="lede odstep">{{ t.proces.lede|tekst:pola }}</p>
+    </div>
+    <div>
+      <ol class="steps" id="steps">
+        {% for k in t.proces.kroki %}<li><span class="dot">{{ forloop.counter }}</span><h3>{{ k.tytul|tekst:pola }}</h3><p>{{ k.tekst|tekst:pola }}</p></li>
+        {% endfor %}</ol>
+      <details class="wk" id="wk" open><summary>{{ t.proces.tygodniowy.przycisk }}</summary>
+      <div class="weekly" aria-label="{{ t.proces.tygodniowy.aria }}">
+        <div class="bar"><span><b>{{ t.proces.tygodniowy.naglowek }}</b>, {{ t.proces.tygodniowy.naglowek_dopisek }}</span><span class="example">{{ t.proces.tygodniowy.etykieta }}</span></div>
+        <div class="body">
+          <div class="kpis">
+            {% for k in t.proces.tygodniowy.liczby %}<div><b data-count="{{ k.liczba }}" style="--to:{{ k.liczba }}"><span class="num">{{ k.liczba }}</span></b><span>{{ k.opis }}</span></div>
+            {% endfor %}</div>
+          <dl>
+            {% for r in t.proces.tygodniowy.wiersze %}<dt>{{ r.nazwa }}</dt><dd>{{ r.wartosc|tekst:pola }}</dd>
+            {% endfor %}</dl>
+        </div>
+      </div>
+      </details>
+    </div>
+  </div>
+</section>

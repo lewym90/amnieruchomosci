@@ -1,0 +1,53 @@
+{
+  "_opis": "Dane wspólne dla wszystkich wersji językowych. Docelowo: model DaneFirmy i UstawieniaStrony w Mojej Agencji (panel Strona www). Puste pole = na stronie pojawia się znacznik [do uzupełnienia].",
+  "strona": {
+    "adres": "https://lewym90.github.io/amnieruchomosci/",
+    "sciezka_bazowa": "/amnieruchomosci/",
+    "indeksowanie": false
+  },
+  "program": {
+    "oferty": "https://188-68-247-201.sslip.io/agencja/publiczne/oferty.json",
+    "zapytania": ""
+  },
+  "firma": {
+    "marka": "AM Nieruchomości",
+    "nazwa_pelna": "AM Nieruchomości s.c. Michał Lewandowski, Agata Ceglińska",
+    "nip": "",
+    "regon": "",
+    "adres": "",
+    "telefon": "",
+    "email": "",
+    "stawka": "",
+    "okres_przechowywania_zapytan": "",
+    "wspolnicy": [
+      {"imie_nazwisko": "Michał Lewandowski", "polisa_oc": "", "ubezpieczyciel": ""},
+      {"imie_nazwisko": "Agata Ceglińska", "polisa_oc": "", "ubezpieczyciel": ""}
+    ]
+  },
+  "jezyki": [
+    {"kod": "pl", "skrot": "PL", "nazwa": "Polski", "sciezka": ""},
+    {"kod": "en", "skrot": "EN", "nazwa": "English", "sciezka": "en/"},
+    {"kod": "uk", "skrot": "UA", "nazwa": "Українська", "sciezka": "uk/"}
+  ],
+  "uklad": [
+    {"sekcja": "hero", "widoczna": true},
+    {"sekcja": "zasady", "widoczna": true},
+    {"sekcja": "pasek", "widoczna": true},
+    {"sekcja": "porownanie", "widoczna": true},
+    {"sekcja": "uslugi", "widoczna": true},
+    {"sekcja": "raport", "widoczna": true},
+    {"sekcja": "krakow", "widoczna": true},
+    {"sekcja": "proces", "widoczna": true},
+    {"sekcja": "sprawy", "widoczna": true},
+    {"sekcja": "o_nas", "widoczna": true},
+    {"sekcja": "motto", "widoczna": true},
+    {"sekcja": "obszar", "widoczna": true},
+    {"sekcja": "faq", "widoczna": true},
+    {"sekcja": "oferty", "widoczna": true},
+    {"sekcja": "kontakt", "widoczna": true}
+  ],
+  "zdjecia": {
+    "raport": {"plik": "zdjecie-raport", "szerokosci": [700, 1400], "wysokosc_1400": 933, "ai": true},
+    "zespol": {"plik": "zdjecie-zespol", "szerokosci": [450, 900], "wysokosc_900": 1350, "ai": true}
+  }
+}

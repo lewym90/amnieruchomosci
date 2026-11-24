@@ -1,0 +1,22 @@
+{% load strona %}<section class="hero" id="top" aria-labelledby="h1">
+  <canvas id="plan" aria-hidden="true"></canvas>
+  {% include "strona/sekcje/_rzut.html" %}
+  <div class="wrap">
+    <div>
+      <h1 id="h1">{{ t.hero.tytul|tekst:pola }}</h1>
+      <p class="lede">{{ t.hero.lede|tekst:pola }}</p>
+      <div class="ctas">
+        <a class="btn" href="#kontakt" data-tab="sell">{{ t.hero.przycisk_sprzedaje }}</a>
+        <a class="btn ghost" href="#kontakt" data-tab="buy">{{ t.hero.przycisk_kupuje }}</a>
+      </div>
+      <div class="area">{{ t.hero.obszar|tekst:pola }}</div>
+    </div>
+    <aside class="check" aria-label="{{ t.hero.lista_tytul }}">
+      <h2>{{ t.hero.lista_tytul }}</h2>
+      <ol id="checklist">
+        {% for p in t.hero.lista %}<li><b>{{ p|tekst:pola }}</b><svg viewBox="0 0 20 20" fill="none" stroke="#C8A44D" stroke-width="1.6" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg></li>
+        {% endfor %}</ol>
+      <p class="note">{{ t.hero.lista_nota|tekst:pola }}</p>
+    </aside>
+  </div>
+</section>

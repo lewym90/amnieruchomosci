@@ -1,0 +1,69 @@
+{% load static strona %}<!doctype html>
+<html lang="{{ jezyk }}">
+<head>
+<meta charset="utf-8">
+{% if not w.strona.indeksowanie %}<meta name="robots" content="noindex, nofollow, noarchive">
+{% endif %}<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0B0B0D">
+<title>{{ t.meta.tytul }}</title>
+<meta name="description" content="{{ t.meta.opis }}">
+<link rel="canonical" href="{{ adres_kanoniczny }}">
+{% for j in jezyki %}<link rel="alternate" hreflang="{{ j.kod }}" href="{{ j.adres }}">
+{% endfor %}<link rel="alternate" hreflang="x-default" href="{{ jezyki.0.adres }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ w.firma.marka }}">
+<meta property="og:locale" content="{{ t.meta.lokalizacja_og }}">
+<meta property="og:title" content="{{ t.meta.og_tytul }}">
+<meta property="og:description" content="{{ t.meta.og_opis }}">
+<meta property="og:url" content="{{ adres_kanoniczny }}">
+<meta property="og:image" content="{{ adres_og_obrazu }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="{% static 'strona/img/favicon.png' %}">
+<link rel="apple-touch-icon" href="{% static 'strona/img/apple-touch-icon.png' %}">
+<link rel="manifest" href="{{ sciezka_bazowa }}manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="{{ w.firma.marka }}">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no">
+<link rel="preload" href="{% static 'strona/fonty/marcellus-latin-400-normal.woff2' %}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{% static 'strona/fonty/archivo-latin-400-normal.woff2' %}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{% static 'strona/css/strona.css' %}?v={{ wersja }}">
+<script>document.documentElement.classList.add("js");try{if(sessionStorage.getItem("am-seen"))document.documentElement.classList.add("seen");else sessionStorage.setItem("am-seen","1")}catch(e){}</script>
+<script type="application/ld+json">{{ dane_strukturalne|safe }}</script>
+</head>
+<body>
+<a class="skip" href="#main">{{ t.nawigacja.przejscie }}</a>
+
+<div id="intro" aria-hidden="true"><img class="mark" src="{% static 'strona/img/znak.webp' %}" alt="" width="240" height="152"><i class="rule"></i></div>
+<div id="progress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="{{ t.nawigacja.marka_aria }}"><img src="{% static 'strona/img/znak.webp' %}" alt="" width="47" height="30"><span>{{ w.firma.marka }}</span></a>
+    <button class="burger" id="burger" type="button" aria-label="{{ t.nawigacja.menu_aria }}" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+    <ul class="menu" id="menu">
+      {% for l in t.nawigacja.linki %}<li><a href="#{{ l.cel }}">{{ l.tekst }}</a></li>
+      {% endfor %}<li class="jezyki" aria-label="{{ t.wspolne.jezyk }}">{% for j in jezyki %}<a href="{{ j.href }}" hreflang="{{ j.kod }}" lang="{{ j.kod }}" title="{{ j.nazwa }}"{% if j.kod == jezyk %} aria-current="true"{% endif %}>{{ j.skrot }}</a>{% endfor %}</li>
+      <li><a class="btn" href="#kontakt" data-tab="sell">{{ t.nawigacja.cta }}</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+{% for s in uklad %}{% if s.widoczna %}{% include s.szablon %}
+{% endif %}{% endfor %}
+</main>
+
+<div class="mcta{% if not w.firma.telefon %} jeden{% endif %}" id="mcta"><a class="btn" href="#kontakt" data-tab="sell">{{ t.nawigacja.cta }}</a>{% if w.firma.telefon %}<a class="btn ghost" href="tel:{{ w.firma.telefon|tel }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6.6 3.5h3l1.4 4.2-2 1.3a11 11 0 0 0 6 6l1.3-2 4.2 1.4v3A1.6 1.6 0 0 1 18.9 19 15.5 15.5 0 0 1 5 5.1a1.6 1.6 0 0 1 1.6-1.6Z" stroke-linejoin="round"/></svg>{{ t.kontakt.przycisk_telefon }}</a>{% endif %}</div>
+
+{% include "strona/stopka.html" %}
+{% include "strona/okna.html" %}
+
+{{ dane_js|json_script:"dane-strony" }}
+<script src="{% static 'strona/js/strona.js' %}?v={{ wersja }}" defer></script>
+</body>
+</html>
