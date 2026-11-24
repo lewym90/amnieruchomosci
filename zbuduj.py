@@ -53,6 +53,12 @@ def pola_firmy(w, t):
     def pole(klucz, opis):
         return format_html("{}", firma[klucz]) if firma.get(klucz) else ph(opis)
 
+    def cena_raportu():
+        ceny = firma.get("cena_raportu") or {}
+        if not (ceny.get("mieszkanie") and ceny.get("dom")):
+            return ph(puste["cena_raportu"])
+        return format_html("{}", napisy["cena_raportu_wzor"].format(**ceny))
+
     polisy = [
         format_html(
             "{} – {} {}, {}",
@@ -73,7 +79,7 @@ def pola_firmy(w, t):
         "telefon": pole("telefon", puste["telefon"]),
         "email": pole("email", puste["email"]),
         "stawka": pole("stawka", puste["stawka"]),
-        "cena_raportu": pole("cena_raportu", puste["cena_raportu"]),
+        "cena_raportu": cena_raportu(),
         "okres_przechowywania_zapytan": pole("okres_przechowywania_zapytan", puste["okres"]),
         "polisy": format_html("; ".join(["{}"] * len(polisy)), *polisy),
         "rok": str(date.today().year),

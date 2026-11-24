@@ -1,6 +1,6 @@
 // Kopia strony na wypadek braku internetu. Najpierw sieć, kopia tylko awaryjnie.
 // Dane z programu biura (oferty, zapytania) nie są zapisywane.
-const C = "am-6a27a8f500";
+const C = "am-42cca3f008";
 const ROOT = "/amnieruchomosci/";
 self.addEventListener("install", e => {
   self.skipWaiting();

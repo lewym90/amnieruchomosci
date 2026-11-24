@@ -22,6 +22,7 @@
       "email": "e-mail",
       "cena_raportu": "ціна звіту"
     },
+    "cena_raportu_wzor": "{mieszkanie} зл за квартиру, {dom} зл за будинок",
     "do_uzupelnienia": "буде доповнено"
   },
   "nawigacja": {

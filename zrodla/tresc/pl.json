@@ -22,6 +22,7 @@
       "email": "e-mail",
       "cena_raportu": "cena raportu"
     },
+    "cena_raportu_wzor": "{mieszkanie} zł za mieszkanie, {dom} zł za dom",
     "do_uzupelnienia": "do uzupełnienia"
   },
   "nawigacja": {

@@ -22,6 +22,7 @@
       "email": "e-mail",
       "cena_raportu": "report price"
     },
+    "cena_raportu_wzor": "PLN {mieszkanie} for a flat or PLN {dom} for a house",
     "do_uzupelnienia": "to be completed"
   },
   "nawigacja": {
@@ -544,7 +545,7 @@
       {
         "pytanie": "How much does it cost?",
         "odpowiedz": [
-          "There is one published rate: [[stawka]]. On a sale, the fee is paid by the seller only, once the sale agreement has been signed as a notarial deed. We accept payment by bank transfer only. For difficult cases, the preparatory stage is priced separately. The Verification Report for buyers has a fixed price of [[cena_raportu]] and is delivered within 5 working days."
+          "There is one published rate: [[stawka]]. On a sale, the fee is paid by the seller only, once the sale agreement has been signed as a notarial deed. We accept payment by bank transfer only. For difficult cases, the preparatory stage is priced separately. The Verification Report for buyers has a fixed price of [[cena_raportu]], and is delivered within 5 working days."
         ]
       },
       {

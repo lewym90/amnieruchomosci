@@ -18,7 +18,7 @@
     "telefon": "",
     "email": "",
     "stawka": "",
-    "cena_raportu": "",
+    "cena_raportu": {"mieszkanie": 599, "dom": 899},
     "okres_przechowywania_zapytan": "",
     "wspolnicy": [
       {

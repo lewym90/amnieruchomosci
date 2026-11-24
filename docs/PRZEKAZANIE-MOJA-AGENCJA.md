@@ -121,7 +121,7 @@ z programu.
 | Okres przechowywania zapytań | **`zgodnosc.UstawieniaRetencji.lead_miesiace`** (już istnieje) | Pole `[[okres_przechowywania_zapytan]]` w RODO wylicza się z tej wartości („12 miesięcy”). Nie dublować. |
 | Oferty na stronie | **`publikacja.strona_www`** (już istnieje) | Rozszerzyć dane (sekcja 6). |
 | Treść strony | **nowe** `strona.TrescStrony` | Wersjonowana, opis niżej. |
-| Ustawienia strony | **nowe** `strona.UstawieniaStrony` (jeden wiersz) | `publiczna` (bool, domyślnie False), `adres` (domena), `uklad` (JSON: lista `{sekcja, widoczna}` w kolejności), `zapytania_wlaczone`, `stawka` i `cena_raportu` (teksty do FAQ i usług). |
+| Ustawienia strony | **nowe** `strona.UstawieniaStrony` (jeden wiersz) | `publiczna` (bool, domyślnie False), `adres` (domena), `uklad` (JSON: lista `{sekcja, widoczna}` w kolejności), `zapytania_wlaczone`, `stawka` (tekst do FAQ i usług), `cena_raportu_mieszkanie` i `cena_raportu_dom` (liczby w zł, dziś 599 i 899; zdanie z nimi składa szablon `cena_raportu_wzor` w każdym języku, więc cena żyje w jednym miejscu — zasada 12). |
 | Zdjęcia strony | **nowe** `strona.ZdjecieStrony` | `klucz` (`raport`, `zespol`, `og`), `plik`, `wygenerowane_ai`, `rodzaj_modyfikacji` (zasada 5). Rozmiary 700/1400 i 450/900 generowane przy zapisie, bez EXIF (jak `biuro/miniatury.py`). |
 | Zapytania ze strony | **nowe** `klienci.ZapytanieZeStrony` | Opis w sekcji 7. Widoczne na tej samej liście co leady z poczty (kolumna „Źródło”). |
 
