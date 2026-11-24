@@ -242,7 +242,7 @@ Wymagania:
     (wtedy zadziałają istniejące dopasowania i powiadomienia),
   - `kupno` + `raport` → zamówienie Raportu Weryfikacyjnego: lead z linkiem, terminem zadatku
     i terminem oddania raportu (5 dni roboczych od przyjęcia zlecenia, z pominięciem świąt:
-    `apps/kalendarz/swieta.py`), widoczne na ekranie Dziś. Termin wyliczany w kodzie ma test (zasada 11),
+    `apps/kalendarz/swieta.py`), widoczne na ekranie Dziś. Wyliczenie terminu ma test (zasada 11).
   - `oferta` ustawione → powiązanie z ofertą o numerze `AM-<pk>`.
 - Powiadomienie biura o nowym zapytaniu (istniejący moduł powiadomień).
 - Gdy zapytania są włączone, okno RODO samo pokazuje tekst `formularz_program`
